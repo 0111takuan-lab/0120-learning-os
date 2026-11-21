@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
-<title>0120' Learning OS Ver.12.0.1</title>
+<title>0120' Learning OS Ver.12.0.2</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;color:#19352b;background:#f3f7f4}*{box-sizing:border-box}body{margin:0}main{max-width:680px;margin:auto;padding:28px 16px 70px}.eyebrow{font-size:12px;letter-spacing:.14em;font-weight:800;color:#41846a}h1{font-size:clamp(28px,7vw,38px);margin:7px 0 8px;letter-spacing:-.035em}h2{font-size:21px;margin:0 0 12px}p{line-height:1.7;color:#65776f;margin:0}.card{background:#fff;border:1px solid #dce7e0;border-radius:22px;padding:21px;margin-top:20px;box-shadow:0 6px 22px #1b4e2b09}.fieldlabel{display:block;font-size:15px;font-weight:800;margin-bottom:10px}input[type=text],textarea{width:100%;border:1.5px solid #c9d9d0;border-radius:14px;padding:15px;font:inherit;color:#1c392e;background:#fff;outline:none}input:focus,textarea:focus{border-color:#3e8b6c;box-shadow:0 0 0 3px #3e8b6c20}textarea{min-height:185px;resize:vertical;line-height:1.7}.hint{background:#edf5ef;border-radius:14px;padding:14px 16px;margin:14px 0 20px;font-size:14px;line-height:1.65;color:#486859}.sub{font-size:12px;color:#7a8d82;margin-top:9px}.tabstate{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:20px}.tab{cursor:pointer;background:#e6ede8;border:1px solid transparent;border-radius:15px;text-align:center;padding:14px 3px;color:#254537;font-size:12px;font-weight:700;user-select:none}.tab strong{display:block;font-size:25px;line-height:1.2;margin-bottom:5px}.panel{display:none}.panel h2{margin:0;font-size:23px}.panel .step{font-size:12px;color:#438467;font-weight:800;margin-bottom:6px;letter-spacing:.05em}.next{display:flex;justify-content:flex-end;margin-top:18px}.next label{background:#327b5e;color:#fff;padding:13px 17px;border-radius:12px;font-size:14px;font-weight:800;cursor:pointer}.note{margin-top:18px;font-size:12px;color:#62776c;line-height:1.8}.footer{margin-top:24px;text-align:center;color:#85958a;font-size:12px}#s0:checked~.tabs label[for=s0],#s1:checked~.tabs label[for=s1],#s2:checked~.tabs label[for=s2],#s3:checked~.tabs label[for=s3]{background:#327b5e;color:#fff}#s0:checked~.panels #p0,#s1:checked~.panels #p1,#s2:checked~.panels #p2,#s3:checked~.panels #p3{display:block}.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:15px}button{border:0;border-radius:12px;padding:12px 15px;font:inherit;font-size:14px;font-weight:800;cursor:pointer;touch-action:manipulation}button.primary{background:#327b5e;color:white}button.secondary{background:#e6ede8;color:#254537}button.danger{background:#fff1ef;color:#a33c36}button:active{opacity:.78}.status{font-size:13px;color:#4c7260;line-height:1.6}.current{font-size:13px;color:#327b5e;font-weight:700;margin-top:10px}.history{display:grid;gap:12px;margin-top:16px}.entry{border:1px solid #dce7e0;border-radius:15px;padding:15px;background:#fbfdfb}.entry.active{border-color:#327b5e;background:#f0f7f2}.entry-title{font-weight:800;overflow-wrap:anywhere}.entry-meta{font-size:12px;color:#6e8075;margin-top:6px}.entry .actions{margin-top:10px}.empty{font-size:14px;color:#74877b;padding:12px 0}.tag{display:inline-block;background:#e7f1e9;color:#327b5e;border-radius:99px;padding:3px 8px;font-size:11px;margin-left:7px}.backup{font-size:12px;color:#74877b;margin-top:10px}#saveStatus[role=status]{min-height:1.5em}
 
@@ -618,7 +618,8 @@ main{max-width:820px;padding:0 17px 110px}.app-view{min-width:0}.card{border-rad
 </style>
 <style id="v12-styles">
 .v12-hub{margin:18px 0 28px;padding:20px;border:1px solid var(--line);background:var(--surface);border-radius:22px;color:var(--ink)}.v12-hub h2{font-size:23px;margin:5px 0 7px}.v12-hub p{color:var(--muted);font-size:13px;line-height:1.7}.v12-eyebrow{font-size:10px;letter-spacing:.13em;font-weight:800;color:var(--accent-ink)}.v12-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.v12-card{border:1px solid var(--line);border-radius:17px;padding:15px;min-width:0;background:var(--surface)}.v12-card h3{font-size:16px;margin:0 0 8px}.v12-card label{font-size:12px;font-weight:700;display:block;margin:10px 0 5px}.v12-card select,.v12-card textarea{display:block;width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:11px;padding:10px;font:inherit;font-size:13px}.v12-card textarea{min-height:105px;resize:vertical}.v12-card button{border:0;background:var(--accent);color:white;border-radius:11px;padding:10px 13px;font-size:12px;font-weight:700;min-height:40px;margin:9px 6px 0 0}.v12-card button.v12-alt{background:var(--soft);color:var(--accent-ink)}.v12-output{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:12px;border-radius:12px;font-size:12px;line-height:1.7;margin-top:12px;max-height:320px;overflow:auto}.v12-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.v12-stat{padding:12px 8px;background:var(--soft);border-radius:12px;text-align:center}.v12-stat strong{display:block;font-size:23px}.v12-stat small{font-size:10px;color:var(--muted)}.v12-note{font-size:11px!important}.v12-card[hidden],.v12-output[hidden]{display:none!important}@media(max-width:690px){.v12-grid{grid-template-columns:1fr}.v12-hub{padding:15px}}
-</style></head>
+</style><style id="release-check-disabled">#release-check{display:none!important;visibility:hidden!important}</style>
+</head>
 <body>
 <main>
 <div class="app-view" id="viewStudy"><section id="v9Quick" class="v9-quick" aria-label="01モード専用学習画面">
@@ -828,7 +829,7 @@ main{max-width:820px;padding:0 17px 110px}.app-view{min-width:0}.card{border-rad
 </div></div>
 <nav aria-label="ショートカット" class="v11-shortcuts"><a href="#studySection"><span>✎</span>学習</a><a href="#historySection"><span>▤</span>履歴</a><a href="#networkSection"><span>◎</span>ネットワーク</a><a href="#growthSection"><span>▥</span>成長</a></nav>
 <div class="note">※ 学習記録は現在利用しているブラウザ・アプリ内に保存されます。ブラウザやURLを変更したり、サイトデータを削除すると、記録が表示されなくなる場合があります。定期的にJSONバックアップを保存してください。</div>
-<div class="footer">0120' Learning OS · Ver.12.0.1</div>
+<div class="footer">0120' Learning OS · Ver.12.0.2</div>
 <nav aria-label="画面切り替え" class="v11-bottom"><a aria-current="page" data-view="study" href="#study"><span>✎</span>学習</a><a aria-current="false" data-view="growth" href="#growth"><span>▥</span>復習</a><a aria-current="false" data-view="history" href="#history"><span>▤</span>履歴</a><a aria-current="false" data-view="ai" href="#ai"><span>◇</span>AI分析</a></nav></main>
 <script>
 (function(){
@@ -1668,53 +1669,7 @@ $('betaExport').addEventListener('click',function(){if(!validate())return;try{va
 $('betaCopy').addEventListener('click',function(){if(!validate())return;var data=formatted();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(data).then(function(){$('betaStatus').textContent='回答をコピーしました。共有前に内容を確認してください。';}).catch(function(){$('betaStatus').textContent='コピーできませんでした。JSON保存をお試しください。';});}else{$('betaStatus').textContent='この環境ではコピーに対応していません。JSON保存をお試しください。';}});
 try{if(!localStorage.getItem(seen))setTimeout(guide,350);}catch(e){}
 })();
-</script><div id="release-check" role="status" style="position:fixed;right:12px;bottom:calc(78px + env(safe-area-inset-bottom));z-index:1000;background:#172235;color:#e7f1ff;border:1px solid #607795;border-radius:14px;padding:9px 12px;font:12px -apple-system,BlinkMacSystemFont,sans-serif;max-width:270px;box-shadow:0 6px 20px #0005;display:none"></div><script id="0120-release-check">
-(()=>{
-  const current = '12.0.1';
-  const el = document.getElementById('release-check');
-  if (!el) return;
-  // Compare numeric version segments; older releases must never trigger a notice.
-  function parseVersion(value) {
-    if (typeof value !== 'string') return null;
-    const match = value.trim().match(/^v?(\d+)\.(\d+)(?:\.(\d+))?(?:\.(\d+))?$/i);
-    return match ? match.slice(1).map(n => n === undefined ? 0 : Number(n)) : null;
-  }
-  function isNewer(remote, local) {
-    const a = parseVersion(remote), b = parseVersion(local);
-    if (!a || !b) return false;
-    for (let i = 0; i < 4; i++) {
-      if (a[i] > b[i]) return true;
-      if (a[i] < b[i]) return false;
-    }
-    return false;
-  }
-  async function check() {
-    try {
-      const response = await fetch('./version.json?t=' + Date.now(), {cache:'no-store'});
-      if (!response.ok) {el.style.display='none'; return;}
-      const data = await response.json();
-      if (!isNewer(data.version, current)) {el.style.display='none'; return;}
-      el.replaceChildren();
-      const msg = document.createElement('span');
-      msg.textContent = '新しいバージョン ' + data.version + ' が公開されています。 ';
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.textContent = '更新';
-      btn.style.cssText = 'padding:6px 10px;margin-left:6px;border-radius:8px;background:#c4defd;color:#10243b;border:0;cursor:pointer';
-      btn.onclick = async () => {
-        if ('serviceWorker' in navigator) {
-          try {const r = await navigator.serviceWorker.getRegistration(); if (r) await r.update();} catch(e) {}
-        }
-        location.reload();
-      };
-      el.append(msg, btn);
-      el.style.display='block';
-    } catch(e) {el.style.display='none';}
-  }
-  window.addEventListener('load', check);
-  window.addEventListener('focus', check);
-})();
-</script>
+</script><!-- Update notification removed intentionally in Ver.12.0.2. -->
 <script id="v300-script">
 (function(){
 'use strict';
@@ -1853,7 +1808,7 @@ var checks=read(CK,{}),due=0;if(checks&&typeof checks==='object')a.forEach(funct
 var list=$('v7RecentList');list.replaceChildren();a.slice().sort(function(x,y){return (date(y.updated||y.created)||0)-(date(x.updated||x.created)||0)}).slice(0,4).forEach(function(x){var b=document.createElement('button');b.type='button';b.className='v7-record';var t=document.createElement('strong'),sm=document.createElement('small');t.textContent=String(x.data.topic||'無題の学習');var d=date(x.updated||x.created);sm.textContent=(d?d.toLocaleDateString('ja-JP'):'日付不明')+' · '+['memo0','memo1','memo2','memo3'].filter(function(k){return String(x.data[k]||'').trim()}).length+'/4 段階';b.append(t,sm);b.addEventListener('click',function(){go('history','historySection');var input=$('historySearch');if(input){input.value=String(x.data.topic||'');input.dispatchEvent(new Event('input',{bubbles:true}))}});list.appendChild(b)});if(!a.length){var p=document.createElement('p');p.textContent='最初の学習記録を作成しましょう。';list.appendChild(p)}}
 $('v7New').addEventListener('click',function(){go('study','studySection')});$('v7Review').addEventListener('click',function(){go('growth','reflection230')});$('v7History').addEventListener('click',function(){go('history','historySection')});$('v7Advanced').addEventListener('click',function(){go('study','v61AdvancedContent');var t=$('v61Toggle');if(t&&$('v61AdvancedContent').hidden)t.click()});
 function download(obj,name){var blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},3000)}
-$('v7Export').addEventListener('click',function(){try{var obj={app:'0120 Learning OS',type:'v12-full-backup',version:'12.0.1',exportedAt:new Date().toISOString(),storage:{}};keys.forEach(function(k){var v=localStorage.getItem(k);if(v!==null)obj.storage[k]=JSON.parse(v)});download(obj,'0120-learning-os-v12-full-backup.json');$('v7ImportStatus').textContent='バックアップを書き出しました。ファイルアプリで保存を確認してください。'}catch(e){$('v7ImportStatus').textContent='書き出しに失敗しました：'+e.message}});
+$('v7Export').addEventListener('click',function(){try{var obj={app:'0120 Learning OS',type:'v12-full-backup',version:'12.0.2',exportedAt:new Date().toISOString(),storage:{}};keys.forEach(function(k){var v=localStorage.getItem(k);if(v!==null)obj.storage[k]=JSON.parse(v)});download(obj,'0120-learning-os-v12-full-backup.json');$('v7ImportStatus').textContent='バックアップを書き出しました。ファイルアプリで保存を確認してください。'}catch(e){$('v7ImportStatus').textContent='書き出しに失敗しました：'+e.message}});
 $('v7Import').addEventListener('change',async function(){var file=this.files&&this.files[0],status=$('v7ImportStatus');if(!file)return;if(file.size>12*1024*1024){status.textContent='12MB以下のJSONを選んでください。';return}try{var obj=JSON.parse(await file.text());if(!obj||obj.app!=='0120 Learning OS')throw Error('Learning OSのバックアップではありません');var incoming={};if(obj.storage&&typeof obj.storage==='object'&&!Array.isArray(obj.storage)){incoming=obj.storage}else if(Array.isArray(obj.records)){incoming[RK]=obj.records;if(obj.draft)incoming['0120_learning_os_v4_draft']=obj.draft}else throw Error('対応していないバックアップ形式です');
 var rs=incoming[RK];if(rs!==undefined&&(!Array.isArray(rs)||rs.length>5000||!rs.every(function(x){return x&&typeof x.id==='string'&&x.id.length<200&&x.data&&typeof x.data==='object'&&!Array.isArray(x.data)})))throw Error('学習記録の形式が不正です');
 var current=rows(),merged=current.slice(),seen=new Set(current.map(function(x){return x.id})),added=0;if(rs)rs.forEach(function(x){if(!seen.has(x.id)){merged.push(x);seen.add(x.id);added++}});
@@ -1943,7 +1898,7 @@ $('v12ShowAnswer').addEventListener('click',function(){var r=record('v12ReviewRe
 document.querySelectorAll('[data-v12grade]').forEach(function(b){b.addEventListener('click',function(){var r=record('v12ReviewRecord');if(!r){$('v12ReviewStatus').textContent='記録を選んでください。';return}var grade=b.dataset.v12grade,days={again:1,okay:3,good:7}[grade],s=schedule(),now=new Date(),next=new Date(now.getTime()+days*86400000);s[String(r.id)]={grade:grade,last:now.toISOString(),next:next.toISOString()};try{localStorage.setItem(SK,JSON.stringify(s));$('v12ReviewStatus').textContent='復習結果を保存しました。次の復習目安：'+fmt(next);refresh();$('v12ReviewStatus').textContent='復習結果を保存しました。次の復習目安：'+fmt(next)}catch(e){$('v12ReviewStatus').textContent='保存できませんでした。ストレージの空き容量を確認してください。'}})});
 $('v12MakePrompt').addEventListener('click',function(){var r=record('v12AiRecord');if(!r){$('v12AiStatus').textContent='学習記録を選んでください。';return}var d=r.data,style=$('v12AiStyle').value,req={explain:'中学生・高校生にも分かるように、具体例を交えて説明し、最後に理解確認の質問を1つ出してください。',quiz:'答えを最初に示さず、理解を確認する問題を3つ出してください。回答後にフィードバックできるようにしてください。',deepen:"01（基本理解）→012（構造化・俯瞰）→0120'（統合）の順に、理解を深める問いと具体例を提案してください。"}[style];$('v12Prompt').textContent='以下は私の学習記録です。\n\nテーマ：'+text(d.topic||'未設定')+'\n0 分からないこと：'+text(d.memo0||'未記入')+'\n1 分かったこと：'+text(d.memo1||'未記入')+'\n2 俯瞰・整理：'+text(d.memo2||'未記入')+"\n0' 統合："+text(d.memo3||'未記入')+'\n\n依頼：'+req;$('v12Prompt').hidden=false;$('v12AiStatus').textContent='質問文を生成しました。内容を確認してからコピーしてください。'});
 $('v12CopyPrompt').addEventListener('click',function(){var t=$('v12Prompt').textContent;if($('v12Prompt').hidden||!t){$('v12AiStatus').textContent='先に質問文を生成してください。';return}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){$('v12AiStatus').textContent='コピーしました。'},function(){$('v12AiStatus').textContent='コピーできませんでした。文章を選択してコピーしてください。'})}else{$('v12AiStatus').textContent='文章を選択してコピーしてください。'}});
-$('v12Export').addEventListener('click',function(){try{var payload={app:'0120 Learning OS',version:'12.0.1',type:'v12-learning-assistance',exportedAt:new Date().toISOString(),reviewSchedule:schedule()};var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='0120-learning-os-v12-assistance.json';document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1000);$('v12ExportStatus').textContent='学習支援データを書き出しました。ファイルの保存を確認してください。'}catch(e){$('v12ExportStatus').textContent='書き出しに失敗しました。'}});
+$('v12Export').addEventListener('click',function(){try{var payload={app:'0120 Learning OS',version:'12.0.2',type:'v12-learning-assistance',exportedAt:new Date().toISOString(),reviewSchedule:schedule()};var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='0120-learning-os-v12-assistance.json';document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1000);$('v12ExportStatus').textContent='学習支援データを書き出しました。ファイルの保存を確認してください。'}catch(e){$('v12ExportStatus').textContent='書き出しに失敗しました。'}});
 $('v12Refresh').addEventListener('click',refresh);window.addEventListener('focus',refresh);document.addEventListener('visibilitychange',function(){if(!document.hidden)refresh()});document.addEventListener('click',function(e){if(e.target.closest('#saveButton,#v9Save,#newButton,#v7Import'))setTimeout(refresh,400)});refresh();
 })();</script></body>
 </html>
