@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
-<title>0120' Learning OS Ver.13.0.0</title>
+<title>0120' Learning OS Ver.15.0.0</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;color:#19352b;background:#f3f7f4}*{box-sizing:border-box}body{margin:0}main{max-width:680px;margin:auto;padding:28px 16px 70px}.eyebrow{font-size:12px;letter-spacing:.14em;font-weight:800;color:#41846a}h1{font-size:clamp(28px,7vw,38px);margin:7px 0 8px;letter-spacing:-.035em}h2{font-size:21px;margin:0 0 12px}p{line-height:1.7;color:#65776f;margin:0}.card{background:#fff;border:1px solid #dce7e0;border-radius:22px;padding:21px;margin-top:20px;box-shadow:0 6px 22px #1b4e2b09}.fieldlabel{display:block;font-size:15px;font-weight:800;margin-bottom:10px}input[type=text],textarea{width:100%;border:1.5px solid #c9d9d0;border-radius:14px;padding:15px;font:inherit;color:#1c392e;background:#fff;outline:none}input:focus,textarea:focus{border-color:#3e8b6c;box-shadow:0 0 0 3px #3e8b6c20}textarea{min-height:185px;resize:vertical;line-height:1.7}.hint{background:#edf5ef;border-radius:14px;padding:14px 16px;margin:14px 0 20px;font-size:14px;line-height:1.65;color:#486859}.sub{font-size:12px;color:#7a8d82;margin-top:9px}.tabstate{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:20px}.tab{cursor:pointer;background:#e6ede8;border:1px solid transparent;border-radius:15px;text-align:center;padding:14px 3px;color:#254537;font-size:12px;font-weight:700;user-select:none}.tab strong{display:block;font-size:25px;line-height:1.2;margin-bottom:5px}.panel{display:none}.panel h2{margin:0;font-size:23px}.panel .step{font-size:12px;color:#438467;font-weight:800;margin-bottom:6px;letter-spacing:.05em}.next{display:flex;justify-content:flex-end;margin-top:18px}.next label{background:#327b5e;color:#fff;padding:13px 17px;border-radius:12px;font-size:14px;font-weight:800;cursor:pointer}.note{margin-top:18px;font-size:12px;color:#62776c;line-height:1.8}.footer{margin-top:24px;text-align:center;color:#85958a;font-size:12px}#s0:checked~.tabs label[for=s0],#s1:checked~.tabs label[for=s1],#s2:checked~.tabs label[for=s2],#s3:checked~.tabs label[for=s3]{background:#327b5e;color:#fff}#s0:checked~.panels #p0,#s1:checked~.panels #p1,#s2:checked~.panels #p2,#s3:checked~.panels #p3{display:block}.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:15px}button{border:0;border-radius:12px;padding:12px 15px;font:inherit;font-size:14px;font-weight:800;cursor:pointer;touch-action:manipulation}button.primary{background:#327b5e;color:white}button.secondary{background:#e6ede8;color:#254537}button.danger{background:#fff1ef;color:#a33c36}button:active{opacity:.78}.status{font-size:13px;color:#4c7260;line-height:1.6}.current{font-size:13px;color:#327b5e;font-weight:700;margin-top:10px}.history{display:grid;gap:12px;margin-top:16px}.entry{border:1px solid #dce7e0;border-radius:15px;padding:15px;background:#fbfdfb}.entry.active{border-color:#327b5e;background:#f0f7f2}.entry-title{font-weight:800;overflow-wrap:anywhere}.entry-meta{font-size:12px;color:#6e8075;margin-top:6px}.entry .actions{margin-top:10px}.empty{font-size:14px;color:#74877b;padding:12px 0}.tag{display:inline-block;background:#e7f1e9;color:#327b5e;border-radius:99px;padding:3px 8px;font-size:11px;margin-left:7px}.backup{font-size:12px;color:#74877b;margin-top:10px}#saveStatus[role=status]{min-height:1.5em}
 
@@ -604,80 +604,135 @@ main{max-width:820px;padding:0 17px 110px}.app-view{min-width:0}.card{border-rad
 @media(prefers-color-scheme:dark){.v9-quick{--v9-bg:#1d2028;--v9-ink:#f6f7fa;--v9-muted:#abb0bc;--v9-line:#373b45}.v9-modes button[aria-pressed=true]{background:#193656;color:#9ccaff}.v9-modes button[aria-pressed=true] small{color:#9ccaff}.v9-step>span{background:#30343d}.v9-blue>span{background:#193656;color:#9ccaff}.v9-track i{background:#363c47}.v9-track i.done{background:#479eff}.v9-actions button+button,.v9-advanced button{background:#193656;color:#a4d1ff}}
 </style><style id="v10-style">
 .v10-review{margin:24px 0 32px;color:var(--v6-text,#1d1d1f)}.v10-heading{margin-bottom:14px}.v10-kicker{font-size:10px;font-weight:800;letter-spacing:.14em;color:#007aff}.v10-heading h2{font-size:clamp(24px,6vw,34px);letter-spacing:-.04em;line-height:1.25;margin:10px 0 7px}.v10-heading p{font-size:13px;line-height:1.7;color:var(--v6-muted,#777)}.v10-review-card{background:var(--v6-card,#fff);border:1px solid var(--v6-line,#e7e7ee);border-radius:24px;padding:20px;box-shadow:0 4px 24px #00000008}.v10-review-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}.v10-review-top strong{font-size:15px}.v10-review-top span{font-size:12px;color:var(--v6-muted,#777)}.v10-review-card label{display:block;font-weight:700;font-size:12px;margin:16px 0 8px}.v10-review-card select,.v10-review-card textarea{box-sizing:border-box;width:100%;background:var(--v6-card,#fff);color:var(--v6-text,#1d1d1f);border:1px solid var(--v6-line,#ddd);border-radius:13px;padding:12px;font:inherit;font-size:14px}.v10-question{padding:17px;background:var(--v6-bg,#f5f5f7);border-radius:16px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.8;margin-top:14px}.v10-buttons{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}.v10-buttons button{border:0;border-radius:13px;padding:14px 9px;min-height:48px;font-size:13px;font-weight:750;background:#007aff;color:white}.v10-buttons button+button{background:var(--v6-bg,#f5f5f7);color:var(--v6-text,#222);border:1px solid var(--v6-line,#ddd)}.v10-original{background:var(--v6-bg,#f5f5f7);border-radius:15px;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75;margin-top:13px;font-size:14px}.v10-original[hidden]{display:none}.v10-note,#v10Status{font-size:12px;color:var(--v6-muted,#777);line-height:1.6}#v10Status{min-height:18px}
-</style><style id="v11-styles">
-.v11-hub,.v11-library{box-sizing:border-box;background:var(--surface,#fff);border:1px solid var(--line,#e5e7eb);border-radius:22px;padding:22px;margin:18px 0;color:var(--text,inherit)}
-.v11-hubtop,.v11-sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px}.v11-hubtop,.v11-eyebrow{font-size:11px;letter-spacing:.09em;font-weight:750;color:var(--muted,#64748b)}
-.v11-hub h2{font-size:clamp(23px,5vw,32px);line-height:1.3;letter-spacing:-.04em;margin:15px 0 7px}.v11-hub p,.v11-sectionhead p{font-size:13px;color:var(--muted,#64748b);margin:0 0 15px;line-height:1.6}
-.v11-hubnav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.v11-hubnav button,.v11-filters button{min-width:0;border:1px solid var(--line,#e5e7eb);background:var(--soft,#f3f5f9);color:var(--text,inherit);border-radius:12px;padding:12px 4px;font-size:13px;font-weight:700;cursor:pointer;min-height:44px}
-.v11-hubstats{display:flex;gap:16px;flex-wrap:wrap;margin-top:15px;color:var(--muted,#64748b);font-size:12px}.v11-hubstats strong{color:var(--text,inherit);font-size:16px}
-.v11-sectionhead h2{margin:6px 0;font-size:22px;letter-spacing:-.03em}.v11-sectionhead>span{white-space:nowrap;color:var(--muted,#64748b);font-size:12px}.v11-library label{display:block;font-weight:650;font-size:13px;margin:9px 0 7px}.v11-library input{box-sizing:border-box;width:100%;min-height:44px;border-radius:12px;border:1px solid var(--line,#d7dce4);background:var(--surface,#fff);color:var(--text,inherit);padding:10px 12px;font-size:16px}
-.v11-filters{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}.v11-filters button{flex:1;min-width:58px;padding:9px 5px}.v11-filters button[aria-pressed="true"]{background:var(--soft,#e7f0ff);outline:2px solid var(--accent,#3478e5);outline-offset:-2px}
-.v11-records{display:grid;gap:9px}.v11-record{border:1px solid var(--line,#e5e7eb);border-radius:14px;padding:13px;background:var(--surface,#fff)}.v11-record strong{display:block;font-size:14px;overflow-wrap:anywhere}.v11-record small{display:block;color:var(--muted,#64748b);margin:6px 0 10px}.v11-record button{min-height:40px;border-radius:10px;border:1px solid var(--line,#ddd);padding:8px 14px;background:var(--soft,#eef3ff);color:var(--text,inherit);font-weight:700}.v11-empty{color:var(--muted,#64748b);font-size:13px;padding:10px}
-#v11Deepen{margin:8px 0 0 10px;border-radius:10px;padding:11px 12px;min-height:44px}
-@media(max-width:430px){.v11-hub,.v11-library{padding:16px;border-radius:18px}.v11-hubnav{grid-template-columns:repeat(2,minmax(0,1fr))}}
-</style>
-<style id="v12-styles">
-.v12-hub{margin:18px 0 28px;padding:20px;border:1px solid var(--line);background:var(--surface);border-radius:22px;color:var(--ink)}.v12-hub h2{font-size:23px;margin:5px 0 7px}.v12-hub p{color:var(--muted);font-size:13px;line-height:1.7}.v12-eyebrow{font-size:10px;letter-spacing:.13em;font-weight:800;color:var(--accent-ink)}.v12-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.v12-card{border:1px solid var(--line);border-radius:17px;padding:15px;min-width:0;background:var(--surface)}.v12-card h3{font-size:16px;margin:0 0 8px}.v12-card label{font-size:12px;font-weight:700;display:block;margin:10px 0 5px}.v12-card select,.v12-card textarea{display:block;width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:11px;padding:10px;font:inherit;font-size:13px}.v12-card textarea{min-height:105px;resize:vertical}.v12-card button{border:0;background:var(--accent);color:white;border-radius:11px;padding:10px 13px;font-size:12px;font-weight:700;min-height:40px;margin:9px 6px 0 0}.v12-card button.v12-alt{background:var(--soft);color:var(--accent-ink)}.v12-output{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:12px;border-radius:12px;font-size:12px;line-height:1.7;margin-top:12px;max-height:320px;overflow:auto}.v12-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.v12-stat{padding:12px 8px;background:var(--soft);border-radius:12px;text-align:center}.v12-stat strong{display:block;font-size:23px}.v12-stat small{font-size:10px;color:var(--muted)}.v12-note{font-size:11px!important}.v12-card[hidden],.v12-output[hidden]{display:none!important}@media(max-width:690px){.v12-grid{grid-template-columns:1fr}.v12-hub{padding:15px}}
-/* Ver.13.0.0: improve AI question-generation button contrast in light and dark themes */
-#v12MakePrompt{background:#173e73!important;color:#ffffff!important;border:1px solid #477cb8!important;box-shadow:0 2px 8px rgba(0,0,0,.12);font-weight:800!important;letter-spacing:.01em}
-#v12MakePrompt:hover{background:#20528e!important}
-#v12MakePrompt:active{background:#12345f!important}
-#v12MakePrompt:focus-visible{outline:3px solid #8dc5ff;outline-offset:3px}
-</style><style id="release-check-disabled">#release-check{display:none!important;visibility:hidden!important}</style>
+</style><style id="v11-quality-style">
+.v11-quality{margin:20px 0;background:var(--card,#fff);border:1px solid var(--line,#e2e6ed);border-radius:22px;padding:20px;box-shadow:0 6px 24px rgba(0,0,0,.035)}
+.v11-quality h2{margin:0 0 8px;font-size:22px;letter-spacing:-.035em}.v11-quality p{font-size:13px;line-height:1.7;opacity:.8}.v11-quality-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:15px 0}.v11-quality-stat{background:rgba(110,120,140,.075);padding:14px 9px;border-radius:14px;min-width:0}.v11-quality-stat span{display:block;font-size:11px;opacity:.7}.v11-quality-stat strong{display:block;font-size:23px;margin-top:6px;font-variant-numeric:tabular-nums}.v11-quality-actions{display:flex;flex-wrap:wrap;gap:9px}.v11-quality-actions button,.v11-quality-actions label{border:1px solid #c5d1e0;border-radius:12px;padding:12px 13px;font-weight:700;font-size:13px;cursor:pointer;display:inline-block;background:transparent;color:inherit}.v11-quality-actions button:first-child{background:#007aff;color:#fff;border-color:#007aff}.v11-quality details{margin-top:14px}.v11-quality summary{cursor:pointer;font-weight:700;font-size:13px}.v11-quality pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;line-height:1.5}.v11-quality-status{margin-top:10px;min-height:1.4em;font-size:12px;line-height:1.6}.v11-quality-warning{font-size:12px;color:#a05c00}.v11-quality[hidden]{display:none!important}
+@media(max-width:430px){.v11-quality{padding:16px}.v11-quality-grid{gap:6px}.v11-quality-stat{padding:12px 8px}.v11-quality-stat strong{font-size:21px}}
+@media(prefers-color-scheme:dark){.v11-quality{background:#1d2027;border-color:#363b47}.v11-quality-stat{background:#2b303a}.v11-quality-actions button,.v11-quality-actions label{border-color:#505b6c}.v11-quality-warning{color:#ffc374}}
+</style><style id="v12-graphic-design">
+/* Ver.15.0.0 Graphic Design Edition: purely presentational, no storage schema changes. */
+:root{--v12-cyan:#9fe4ff;--v12-lav:#c5b8ff;--v12-rose:#edb7e4;--v12-panel:#182337;--v12-edge:#394b69;--v12-type:#f5f7ff;--v12-muted:#b1bfd6}
+html{scroll-padding-top:16px}body{background:radial-gradient(ellipse 75% 370px at 50% 0%,#1d2d4b 0%,#0b1019 100%) fixed!important;color:var(--v12-type)!important}
+main{max-width:740px!important;padding-left:clamp(14px,4vw,26px)!important;padding-right:clamp(14px,4vw,26px)!important}
+#viewStudy{isolation:isolate}
+.v9-quick{position:relative;overflow:hidden;margin:8px 0 28px!important;padding:clamp(23px,5vw,38px)!important;border:1px solid #3b5275;border-radius:32px;background:radial-gradient(ellipse 78% 80% at 95% 8%,#2b3760 0%,transparent 70%),linear-gradient(135deg,#1a2c46,#121b2c 75%)!important;color:#f5f7ff!important;box-shadow:0 24px 60px #02071270,inset 0 1px 0 #ffffff13}
+.v9-quick:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#b8d4ff12 1px,transparent 1px),linear-gradient(90deg,#b8d4ff12 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,#000,transparent 66%)}
+.v9-quick>*:not(.v12-art){position:relative;z-index:1}
+.v12-art{position:absolute;top:-12px;right:-34px;width:clamp(175px,39%,285px);pointer-events:none;opacity:.82;z-index:0}
+.v12-art svg{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 24px #899cff35)}
+.v9-eyebrow{color:#c3d4f2!important;font-size:10px!important;letter-spacing:.17em!important;padding-right:2px}
+.v9-eyebrow span{color:#b9eaff!important;border:1px solid #526c8b;background:#263c57;padding:6px 9px;border-radius:99px}
+.v9-quick h1{max-width:70%;color:#fff!important;font-size:clamp(32px,7.7vw,56px)!important;line-height:1.22!important;letter-spacing:-.065em!important;margin:32px 0 12px!important;text-wrap:balance}
+.v9-quick h1 em{color:#aee9ff!important;background:linear-gradient(90deg,#a4eaff,#c5b8ff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.v9-sub{max-width:70%;color:#c1cde2!important;font-size:13px!important}
+.v9-modes{gap:10px!important;margin:25px 0 18px!important}
+.v9-modes button{position:relative;overflow:hidden;min-height:108px!important;border:1px solid #435a78!important;border-radius:21px!important;background:linear-gradient(145deg,#24354e,#1b2b40)!important;color:#eef4ff!important;box-shadow:inset 0 1px 0 #ffffff15!important;transition:transform .2s,border-color .2s,background .2s!important}
+.v9-modes button:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:#8edff5;opacity:.75}
+.v9-modes button:nth-child(2):before{background:#b2a9ff}.v9-modes button:nth-child(3):before{background:#e8b4dc}
+.v9-modes button small{color:#b7c8e0!important;font-size:11px!important}
+.v9-modes button[aria-pressed=true]{background:linear-gradient(145deg,#355b81,#253a5a)!important;border-color:#b5e7ff!important;box-shadow:0 0 0 2px #a3e7ff2a,inset 0 1px 0 #ffffff27!important;color:#fff!important}
+.v9-editor{background:#152236!important;border:1px solid #3c5270!important;border-radius:25px!important;padding:clamp(16px,4vw,26px)!important;box-shadow:0 12px 32px #02061036!important}
+.v9-editor-head{border-bottom:1px solid #3b4f69;padding-bottom:13px;margin-bottom:18px;color:#dceaff!important;letter-spacing:.08em}
+.v9-editor-head strong{color:#aee9ff!important}
+.v9-editor label,.v10-review-card label{color:#e6efff!important}
+.v9-editor input,.v9-editor textarea,.v10-review-card textarea,.v10-review-card select{background:#0e192b!important;color:#f6f8ff!important;border:1px solid #49617f!important;border-radius:15px!important;box-shadow:inset 0 2px 6px #0002}
+.v9-editor input::placeholder,.v9-editor textarea::placeholder,.v10-review-card textarea::placeholder{color:#879bb6!important}
+.v9-step{background:#1e304b!important;border:1px solid #405b7b!important;border-radius:15px!important;padding:12px!important}.v9-step strong{color:#f3f6ff!important}.v9-step small{color:#aebfda!important}
+.v9-arrow{color:#b6c9e9!important}
+.v9-actions button,.v10-buttons button{min-height:46px!important;border-radius:14px!important;font-weight:750!important}
+.v9-actions button:first-child,.v10-buttons button:first-child{background:linear-gradient(110deg,#a6e6ff,#c5b8ff)!important;color:#13233b!important;border:0!important;box-shadow:0 6px 18px #94b6ff27!important}
+.v9-actions button:nth-child(2),.v10-buttons button:nth-child(2){background:#2a3c57!important;color:#e7f0ff!important;border:1px solid #526985!important}
+.v10-review{margin:25px 0 6px!important}.v10-kicker{color:#b6b9ff!important}.v10-heading h2{color:#f7f8ff!important}.v10-heading p{color:#b8c7df!important}
+.v10-review-card{background:linear-gradient(160deg,#1d2941,#142035)!important;border:1px solid #415779!important;border-radius:24px!important;box-shadow:0 15px 32px #050a1540!important}
+.v10-review-top strong{color:#e8f3ff!important}.v10-review-top span{color:#b6c6df!important}
+.v10-question,.v10-original{background:#25354e!important;color:#edf5ff!important;border:1px solid #405674!important}
+#v81ModeSection{background:linear-gradient(140deg,#1b2940,#162235)!important;border:1px solid #3a506d!important;box-shadow:0 12px 30px #050a152b!important}
+#v81ModeSection:before{color:#b6e7ff!important}
+#v81ModeSection h2{color:#f5f8ff!important}
+#v81ModeSection .mode-switch button{background:#202f46!important;color:#eaf2ff!important;border:1px solid #415673!important}
+#v81ModeSection .mode-switch button:nth-child(1){border-top:3px solid #9fe4ff!important}
+#v81ModeSection .mode-switch button:nth-child(2){border-top:3px solid #b5b1ff!important}
+#v81ModeSection .mode-switch button:nth-child(3){border-top:3px solid #e4b6de!important}
+#v81ModeSection .mode-switch button[aria-pressed=true]{background:#304764!important;border-color:#a8d8ff!important;box-shadow:0 0 0 2px #b8dcff24!important}
+#v81ModeSection .mode-switch button small{color:#bdcbe1!important}
+.v11-quality{background:linear-gradient(150deg,#1e2c42,#172237)!important;border:1px solid #415575!important;box-shadow:0 12px 35px #05091440!important}
+.v11-quality h2{color:#f5f8ff!important}.v11-quality-stat{background:#253751!important;border:1px solid #415775!important}.v11-quality-stat strong{color:#b5e7ff!important}
+.v11-bottom{background:#101a2bf2!important;border-top:1px solid #3c506d!important;backdrop-filter:blur(22px)!important;-webkit-backdrop-filter:blur(22px)!important}
+.v11-bottom a[aria-current=page]{background:linear-gradient(145deg,#304d6d,#293f62)!important;color:#e8f6ff!important}
+@media(hover:hover){.v9-modes button:hover{transform:translateY(-2px)!important;border-color:#a3cfff!important}}
+@media(max-width:520px){.v9-quick{padding:20px 15px!important;border-radius:25px}.v12-art{width:185px;right:-40px;top:4px;opacity:.55}.v9-quick h1{max-width:83%;font-size:clamp(30px,8vw,40px)!important;margin-top:30px!important}.v9-sub{max-width:85%}.v9-modes{gap:7px!important}.v9-modes button{min-height:90px!important;font-size:clamp(20px,5.6vw,28px)!important;padding:10px 3px!important}.v9-modes button small{font-size:10px!important}.v9-editor{padding:15px!important}.v10-review-card{padding:16px!important}}
+@media(max-width:360px){.v12-art{width:155px;opacity:.42}.v9-quick h1{max-width:100%}.v9-sub{max-width:100%}.v9-modes button small{font-size:9px!important}}
+@media(prefers-reduced-motion:reduce){.v9-modes button{transition:none!important}}
+</style><style id="v13-style">
+.v13-panel{border:1px solid var(--line,#dce7e0);padding:20px}
+.v13-panel h2{margin:6px 0 9px}.v13-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:17px 0}
+.v13-stats>div{background:var(--soft,#f1f6f3);border-radius:13px;padding:13px 5px;text-align:center}
+.v13-stats strong{display:block;font-size:25px;color:var(--accent-ink,#245f4b)}.v13-stats small{font-size:11px;color:var(--muted,#65776f)}
+.v13-actions{display:flex;gap:7px;flex-wrap:wrap}.v13-actions button{flex:1;min-width:95px;border:1px solid var(--line,#dce7e0);background:var(--soft,#f1f6f3);color:var(--ink,#19352b);border-radius:10px;padding:11px 8px;font-weight:700}
+#v13Guide{padding:14px;margin-top:14px;border-radius:12px;background:var(--soft,#f1f6f3)}
+#v13Guide li{margin:7px 0}.v13-reviews{margin-top:15px}.v13-list>div{border-top:1px solid var(--line,#dce7e0);padding:10px 0}
+.v13-list strong{display:block;font-size:14px;overflow-wrap:anywhere}.v13-list small,.v13-foot{font-size:12px;color:var(--muted,#65776f)}
+.v13-foot{margin-top:12px}
+</style><style id="v14-compact-style">
+/* Ver.14 compact presentation: original data and handlers unchanged */
+main{max-width:600px!important;padding:12px 12px calc(88px + env(safe-area-inset-bottom))!important}
+.card{margin-top:9px!important;padding:13px!important;border-radius:15px!important;box-shadow:none!important}
+.card h2{font-size:17px!important;margin-bottom:7px!important}
+.v11-bottom,.v11-shortcuts{display:none!important}
+.v14-bottom{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--surface,#fff);border-top:1px solid var(--line,#ddd);display:grid;grid-template-columns:repeat(3,1fr);padding:6px 9px calc(6px + env(safe-area-inset-bottom));gap:5px}
+.v14-bottom button{background:transparent;color:var(--muted,#666);border:0;min-height:52px;font-size:12px;padding:6px}
+.v14-bottom button[aria-current=page]{background:var(--soft,#e8f0fb);color:var(--accent-ink,#2563eb)}
+.v14-bottom button span{display:block;font-size:20px}
+.v14-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 3px 5px}
+.v14-head strong{font-size:17px}.v14-head small{font-size:11px;color:var(--muted,#666)}
+.v14-head button,.v14-mini-actions button{font-size:12px;padding:8px 11px;min-height:38px;border:1px solid var(--line,#ddd);background:var(--surface,#fff);color:var(--ink,#333)}
+.v14-tools{background:var(--surface,#fff);border:1px solid var(--line,#ddd);border-radius:14px;padding:12px;margin:9px 0}
+.v14-tools h2{font-size:16px;margin:0 0 8px}.v14-tools p{font-size:12px;margin:0 0 10px}
+.v14-mini-actions{display:flex;gap:7px;flex-wrap:wrap}
+body.v14-compact #viewStudy>section:not(#v9Quick):not(#studySection){display:none!important}
+body.v14-compact #viewStudy>.panels{display:none!important}
+body.v14-compact #viewHistory #v11Quality,body.v14-compact #viewHistory #v7Settings{display:none!important}
+body.v14-compact #viewStudy #v9Quick{margin-top:5px!important}
 
-<style id="v12-contrast-fix-1204">
-/* Accessibility: force high contrast for action buttons, including inherited legacy styles. */
-#v12Hub .v12-card button:not(.v12-alt),
-#v12Hub #v12MakePrompt, #v12Hub #v12ShowAnswer, #v12Hub #v12Export,
-#v10Review #v10Reveal, #v10Review #v10Next {
-  background-color:#173e73 !important;
-  background-image:none !important;
-  color:#ffffff !important;
-  -webkit-text-fill-color:#ffffff !important;
-  border:1px solid #5c8dc8 !important;
-  box-shadow:0 2px 7px rgba(0,0,0,.18) !important;
-  opacity:1 !important;
-  text-shadow:none !important;
-}
-#v12Hub .v12-card button.v12-alt {
-  background-color:#294264 !important;
-  background-image:none !important;
-  color:#ffffff !important;
-  -webkit-text-fill-color:#ffffff !important;
-  border:1px solid #52749d !important;
-  opacity:1 !important;
-}
-#v12Hub .v12-card button:active, #v10Review .v10-buttons button:active {filter:brightness(1.15)}
-#v12Hub .v12-card button:focus-visible, #v10Review .v10-buttons button:focus-visible {outline:3px solid #8dc5ff !important;outline-offset:3px}
-</style>
-<style id="v12-navy-fix-1205">
-/* Ver.13.0.0: high-contrast navy actions; inline !important on key buttons prevents legacy theme overrides. */
-#v12Hub .v12-card button:not(.v12-alt) {background:#173e73!important;background-image:none!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #5c8dc8!important}
-#v12Hub .v12-card button.v12-alt {background:#294264!important;background-image:none!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
-</style><style id="beginner-v13-style">
-/* The beginner view changes presentation only. All original controls and storage remain intact. */
-.b13-hero{background:linear-gradient(145deg,#162d53,#10223e);color:#eff6ff;border:1px solid #466995;border-radius:22px;padding:20px;margin:10px 0 20px;box-shadow:0 10px 32px #0002}
-.b13-hero h2{font-size:clamp(22px,6vw,30px);margin:6px 0 10px;color:#fff}.b13-hero p{color:#d3e4ff;line-height:1.7}.b13-kicker{font-size:11px;font-weight:800;letter-spacing:.1em;color:#a8d4ff}
-.b13-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.b13-actions button,.b13-tools button{border:1px solid #7299c6;border-radius:13px;background:#24538b;color:white;min-height:46px;padding:10px 15px;font-weight:750;cursor:pointer}.b13-actions button.b13-secondary,.b13-tools button.b13-secondary{background:#203c61}
-.b13-guide{margin:16px 0;padding:16px;background:#1d3557;border:1px solid #526f93;border-radius:16px;color:#eef6ff}.b13-guide[hidden]{display:none!important}.b13-guide h3{color:white;margin:0 0 8px}.b13-guide ol{padding-left:21px;margin:8px 0;line-height:1.85}.b13-guide li{padding:3px 0}.b13-guide p{color:#d5e5fb}.b13-guide .b13-example{background:#102440;padding:12px;border-radius:12px;color:#e7f1ff;margin:12px 0}
-.b13-tools{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.b13-tools button{flex:1;min-width:140px}.b13-notice{font-size:13px!important;color:#bcd4f4!important}.b13-highlight{outline:3px solid #8bd2ff!important;outline-offset:4px;scroll-margin-top:30px}
-body.b13-simple #v12Hub,body.b13-simple #v81ModeSection,body.b13-simple #v7Home,body.b13-simple #v8Workspace,body.b13-simple #studySection,body.b13-simple #v10Review,body.b13-simple #v9Other{display:none!important}
-body.b13-simple #v9Quick{margin-bottom:20px}body.b13-simple #v9Quick .v9-advanced{display:none!important}
-body.b13-simple .v11-shortcuts{display:none!important}
-.b13-hero button:focus-visible,.b13-tools button:focus-visible{outline:3px solid #fff;outline-offset:3px}
-@media(max-width:440px){.b13-hero{padding:16px}.b13-actions button{flex:1 1 100%}.b13-guide{padding:13px}}
+body.v14-compact #viewStudy #v9Quick h1{font-size:clamp(24px,6vw,32px)!important}
+body.v14-compact #viewStudy #v9Quick .v9-sub{font-size:12px!important}
+body.v14-compact #viewStudy #v9Quick .v9-modes button{min-height:66px!important}
+body.v14-compact #viewStudy #studySection{margin-top:9px!important}
+body.v14-compact .v9-editor textarea{min-height:125px!important}
+@media(max-width:380px){.v14-bottom button{font-size:11px}.v14-head strong{font-size:15px}}
+@media print{.v14-bottom,.v14-head,.v14-tools{display:none!important}}
+</style><style id="v15-release-style">
+/* Release UI: compact default, legacy controls accessible in expanded view */
+.v14-head{position:relative;z-index:2}
+.v14-bottom{background:var(--surface,#182434)!important;border-top:1px solid var(--line,#3b4e66)!important}
+.v14-bottom button{color:var(--ink,#e7efff)!important;border-radius:12px}
+.v14-bottom button[aria-current=page]{background:var(--soft,#263b54)!important;color:var(--accent-ink,#cfe4ff)!important}
+body.v14-compact #viewStudy #v13Panel{display:none!important}
+body.v14-compact #viewStudy #v9Quick{display:block!important}
+body.v14-compact #viewStudy #studySection{display:block!important}
+body.v14-compact #viewStudy>section:not(#v9Quick):not(#studySection){display:none!important}
+body.v14-compact #viewStudy .v11-hero,body.v14-compact #viewStudy .v11-overview{display:none!important}
+body.v14-compact #viewStudy #v9Quick .v12-art{display:none!important}
+body.v14-compact #viewStudy #v9Quick h1{margin-top:6px!important}
+body.v14-compact #viewStudy #v9Quick .v9-modes button{min-height:62px!important}
+body.v14-compact #viewStudy #studySection .card{padding:13px!important}
+#v14Manage[hidden]{display:none!important}
+#v14Manage{display:block;scroll-margin-top:70px}
+.v15-info{font-size:11px;opacity:.8;margin-top:10px}
+@media print{.v14-bottom{display:none!important}}
 </style></head>
 <body>
-<main>
-<div class="app-view" id="viewStudy"><section class="b13-hero" id="b13Welcome" aria-label="はじめてのLearning OS">
-<div class="b13-kicker">0120' LEARNING OS · はじめての方へ</div>
-<h2>分からないことを、1つ書くところから。</h2>
-<p>このアプリは、勉強で疑問に思ったことを記録して、理解を整理する学習ノートです。最初は難しい操作は必要ありません。</p>
-<div class="b13-actions"><button type="button" id="b13Start">最初の学習を始める</button><button type="button" class="b13-secondary" id="b13GuideToggle" aria-expanded="false" aria-controls="b13Guide">3分で使い方を見る</button></div>
-<div id="b13Guide" class="b13-guide" hidden><h3>まずは、この3ステップ</h3><ol><li><strong>学習テーマ</strong>に勉強したいことを書く</li><li><strong>分からないこと</strong>に疑問を書く</li><li>調べた後に<strong>分かったこと</strong>を書いて「学習を保存」する</li></ol><div class="b13-example">例：テーマ「一次方程式」<br>疑問「なぜ移項すると符号が変わるの？」<br>分かったこと「両辺に同じ数を足したり引いたりしているから」</div><p>01＝基本を理解する／012＝考え方を整理する／0120'＝別の視点から深める。最初は01で十分です。</p><button type="button" id="b13GuideStart">01で学習を始める</button></div>
-<p class="b13-notice">入力した学習はこのブラウザ内に保存されます。端末変更前にはバックアップを取ってください。</p>
-</section><div class="b13-tools" id="b13Tools"><button type="button" id="b13ToggleAdvanced" aria-pressed="false">すべての機能を見る</button><button type="button" class="b13-secondary" id="b13OpenHistory">保存した学習を見る</button><button type="button" class="b13-secondary" id="b13OpenReview">復習する</button></div><section id="v9Quick" class="v9-quick" aria-label="01モード専用学習画面">
-<div class="v9-eyebrow">0120' LEARNING OS <span>VER.12.0.5</span></div>
+<main><div class="v14-head" id="v14Header"><div><strong>0120' Learning OS</strong><small>　Ver.15 · Release</small></div><button type="button" id="v14Expand" aria-pressed="false">すべての機能</button></div>
+<section class="v14-tools" id="v14Manage" hidden>
+<h2>ツール・設定</h2><p>必要な機能を選択してください。学習中は表示されません。</p>
+<div class="v14-mini-actions">
+<button type="button" data-v15-target="growth">復習する</button>
+<button type="button" data-v15-target="ai">AI分析</button>
+<button type="button" data-v15-target="dashboard">学習統計</button>
+<button type="button" data-v15-target="backup">バックアップ・復元</button>
+</div><p style="margin-top:12px">学習記録はこの端末のブラウザ内に保存されます。ブラウザのデータを消去すると失われる場合があります。定期的にバックアップしてください。</p>
+</section><div class="app-view" id="viewStudy"><section id="v9Quick" class="v9-quick" aria-label="01モード専用学習画面">
+<div class="v12-art" aria-hidden="true"><svg viewBox="0 0 320 240" role="presentation" focusable="false"><defs><linearGradient id="v12line" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#9fe4ff"/><stop offset=".52" stop-color="#a8b6ff"/><stop offset="1" stop-color="#d6a7ff"/></linearGradient><radialGradient id="v12glow"><stop stop-color="#7b9dff" stop-opacity=".38"/><stop offset="1" stop-color="#7b9dff" stop-opacity="0"/></radialGradient></defs><circle cx="160" cy="119" r="115" fill="url(#v12glow)"/><circle cx="160" cy="119" r="83" fill="none" stroke="#b7c7ff" stroke-opacity=".16"/><circle cx="160" cy="119" r="59" fill="none" stroke="#b7c7ff" stroke-opacity=".12"/><path d="M160 33 C245 33 263 111 240 156 C217 204 132 215 91 161 C55 112 88 48 160 33" fill="none" stroke="url(#v12line)" stroke-width="5" stroke-linecap="round"/><path d="M239 155 l-2 -23 l-21 12" fill="none" stroke="#d6a7ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="160" cy="33" r="9" fill="#9fe4ff"/><circle cx="91" cy="161" r="9" fill="#b7b5ff"/><circle cx="238" cy="156" r="9" fill="#d6a7ff"/><text x="160" y="112" text-anchor="middle" fill="#eff4ff" font-size="34" font-weight="800" font-family="system-ui">0120′</text><text x="160" y="139" text-anchor="middle" fill="#b8c8e7" font-size="10" letter-spacing="3" font-family="system-ui">LEARNING LOOP</text></svg></div><div class="v9-eyebrow">0120' LEARNING OS <span>VER.15.0</span></div>
 <h1>分からないを、<br><em>分かるに。</em></h1><p class="v9-sub">01モード専用の、シンプルな学習スペース。</p>
 <div class="v9-modes" role="group" aria-label="学習モード切り替え"><button type="button" data-v9mode="modeBasic" aria-pressed="true">01<small>基本理解</small></button><button type="button" data-v9mode="modeSimple" aria-pressed="false">012<small>思考整理</small></button><button type="button" data-v9mode="modeDetailed" aria-pressed="false">0120’<small>深い学習</small></button></div>
 <div class="v9-editor" id="v9Editor"><div class="v9-editor-head"><strong>01 · QUICK LEARN</strong><span id="v9Progress">0 / 3</span></div>
@@ -697,13 +752,7 @@ body.b13-simple .v11-shortcuts{display:none!important}
 <div class="v10-original" id="v10Original" hidden></div><p id="v10Status" role="status" aria-live="polite"></p>
 <p class="v10-note">復習中の入力は元の学習記録を変更しません。理解度の自動採点も行いません。</p>
 </div></section><div class="v9-other" id="v9Other" hidden><h2 id="v9OtherTitle">012モード</h2><p>選択したモードの既存エディタを利用できます。現在の入力内容は保持されます。</p><button type="button" id="v9OtherGo">学習エディタを開く ↓</button></div>
-</section><section id="v12Hub" class="v12-hub" aria-label="Ver.12 学習支援"><span class="v12-eyebrow">SMART LEARNING · VER.12.0.5</span><h2>学びを、次につなげる。</h2><p>保存した学習を使って、質問を作る・思い出す・学び方を振り返る。記録本体は変更しません。</p><div class="v12-grid">
-<article class="v12-card"><h3>AI学習アシスタント</h3><p>学習記録から質問文を作ります。AIへの自動送信は行いません。</p><label for="v12AiRecord">学習記録</label><select id="v12AiRecord"><option value="">記録を読み込み中</option></select><label for="v12AiStyle">質問の目的</label><select id="v12AiStyle"><option value="explain">分かりやすく説明してほしい</option><option value="quiz">理解度を確認したい</option><option value="deepen">0120'へ理解を深めたい</option></select><button type="button" id="v12MakePrompt" style="background:#173e73!important;background-color:#173e73!important;background-image:none!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;border:1px solid #5c8dc8!important;opacity:1!important;box-shadow:0 2px 8px rgba(0,0,0,.2)!important;">質問文を生成</button><button type="button" class="v12-alt" id="v12CopyPrompt">質問文をコピー</button><div id="v12Prompt" class="v12-output" hidden></div><p id="v12AiStatus" role="status"></p></article>
-<article class="v12-card"><h3>理解度に合わせた復習</h3><p>元の説明を思い出してから確認し、自己評価を記録します。</p><label for="v12ReviewRecord">復習する記録</label><select id="v12ReviewRecord"><option value="">記録を読み込み中</option></select><div id="v12ReviewQuestion" class="v12-output">記録を選択してください。</div><label for="v12RecallText">自分の言葉で説明</label><textarea id="v12RecallText" placeholder="答えを見ずに思い出してみましょう"></textarea><button type="button" id="v12ShowAnswer" style="background:#173e73!important;background-color:#173e73!important;background-image:none!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;border:1px solid #5c8dc8!important;opacity:1!important;box-shadow:0 2px 8px rgba(0,0,0,.2)!important;">元の説明を確認</button><div id="v12ReviewAnswer" class="v12-output" hidden></div><p>理解度を選択すると、次の復習予定日を提案します。</p><button type="button" class="v12-alt" data-v12grade="again">もう一度（翌日）</button><button type="button" class="v12-alt" data-v12grade="okay">だいたい理解（3日後）</button><button type="button" class="v12-alt" data-v12grade="good">説明できた（7日後）</button><p id="v12ReviewStatus" role="status"></p></article>
-<article class="v12-card"><h3>学習インサイト</h3><div class="v12-stats"><div class="v12-stat"><strong id="v12All">0</strong><small>学習記録</small></div><div class="v12-stat"><strong id="v12Due">0</strong><small>復習対象</small></div><div class="v12-stat"><strong id="v12Reviewed">0</strong><small>復習評価済み</small></div></div><p id="v12ModeSummary"></p><p id="v12ThemeSummary"></p><button type="button" class="v12-alt" id="v12Refresh">最新の記録を読み込む</button></article>
-<article class="v12-card"><h3>学習データの保護</h3><p>Ver.11.0以前の記録は既存の保存形式のまま読み込みます。復習評価だけを別のキーに保存します。</p><button type="button" id="v12Export" style="background:#173e73!important;background-color:#173e73!important;background-image:none!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;border:1px solid #5c8dc8!important;opacity:1!important;box-shadow:0 2px 8px rgba(0,0,0,.2)!important;">Ver.12 学習支援データをバックアップ</button><p id="v12ExportStatus" role="status"></p><p class="v12-note">すべての学習データをバックアップする場合は、従来の「全データ書き出し」機能も利用してください。</p></article>
-</div></section><section id="v11Library" class="v11-library" aria-label="学習ライブラリ"><div class="v11-sectionhead"><div><span class="v11-eyebrow">LEARNING LIBRARY</span><h2>学びの記録</h2><p>これまでの記録を探し、続きを学べます。</p></div><span id="v11LibraryCount">0 件</span></div><label for="v11Search">キーワード検索</label><input id="v11Search" type="search" placeholder="テーマ・メモから検索" autocomplete="off"/><div class="v11-filters" role="group" aria-label="学習段階で絞り込み"><button type="button" data-v11filter="all" aria-pressed="true">すべて</button><button type="button" data-v11filter="01" aria-pressed="false">01</button><button type="button" data-v11filter="012" aria-pressed="false">012</button><button type="button" data-v11filter="0120" aria-pressed="false">0120’</button></div><div id="v11LibraryList" class="v11-records"><p>保存済みの学習を読み込んでいます。</p></div><p id="v11LibraryStatus" role="status" aria-live="polite"></p></section>
-<section aria-label="学習モードを選択" class="v81-mode-section" id="v81ModeSection"><h2>学び方を選ぶ</h2><p>01・012・0120’をいつでも切り替え。選択したモードで学習を進められます。</p><div class="mode-switch"><button aria-label="01モード：基本理解。分からない → 分かった" aria-pressed="false" id="modeBasic" type="button"><strong>01</strong><span>基本理解</span><small>分からない → 分かった</small></button><button aria-label="012モード：シンプル。受容 → 論理化 → 俯瞰" aria-pressed="false" id="modeSimple" type="button"><strong>012</strong><span>シンプル</span><small>受容 → 論理化 → 俯瞰</small></button><button aria-label="0120’モード：詳細。受容 → 論理化 → 俯瞰 → 統合" aria-pressed="true" id="modeDetailed" type="button"><strong>0120’</strong><span>詳細</span><small>受容 → 論理化 → 俯瞰 → 統合</small></button></div><div class="sub" id="modeHelp">詳細モード：0 → 1 → 2 → 0’ の4段階で記録します。</div></section><section aria-label="Learning OS 7 ホーム" id="v7Home"><div class="v7-kicker"><span>0120' LEARNING OS</span><span class="v7-version">11.0</span></div><h1>学ぶことを、<br/><em>もっと自由に。</em></h1><p>考える。理解する。思い出す。<br/>ひとつの流れで、学びを自分のものに。</p><div class="v7-actions"><button id="v7New" type="button">＋ 新しく学ぶ</button><button id="v7Review" type="button">今日の復習 <b id="v7DueBadge">0</b></button></div><div class="v7-overview"><div><span>学習記録</span><strong id="v7Total">0</strong><small>件</small></div><div><span>今週の学習</span><strong id="v7Week">0</strong><small>件</small></div><div><span>完了した4段階</span><strong id="v7Done">0</strong><small>件</small></div></div><div class="v7-recent"><div class="v7-section-head"><h2>最近の学習</h2><button id="v7History" type="button">すべて見る →</button></div><div id="v7RecentList"><p>まだ学習記録がありません。</p></div></div></section><section aria-label="学習プランとスマート復習" id="v8Workspace">
+</section><section aria-label="学習モードを選択" class="v81-mode-section" id="v81ModeSection"><h2>学び方を選ぶ</h2><p>01・012・0120’をいつでも切り替え。選択したモードで学習を進められます。</p><div class="mode-switch"><button aria-label="01モード：基本理解。分からない → 分かった" aria-pressed="false" id="modeBasic" type="button"><strong>01</strong><span>基本理解</span><small>分からない → 分かった</small></button><button aria-label="012モード：シンプル。受容 → 論理化 → 俯瞰" aria-pressed="false" id="modeSimple" type="button"><strong>012</strong><span>シンプル</span><small>受容 → 論理化 → 俯瞰</small></button><button aria-label="0120’モード：詳細。受容 → 論理化 → 俯瞰 → 統合" aria-pressed="true" id="modeDetailed" type="button"><strong>0120’</strong><span>詳細</span><small>受容 → 論理化 → 俯瞰 → 統合</small></button></div><div class="sub" id="modeHelp">詳細モード：0 → 1 → 2 → 0’ の4段階で記録します。</div></section><section aria-label="Learning OS 7 ホーム" id="v7Home"><div class="v7-kicker"><span>0120' LEARNING OS</span><span class="v7-version">8.0</span></div><h1>学ぶことを、<br/><em>もっと自由に。</em></h1><p>考える。理解する。思い出す。<br/>ひとつの流れで、学びを自分のものに。</p><div class="v7-actions"><button id="v7New" type="button">＋ 新しく学ぶ</button><button id="v7Review" type="button">今日の復習 <b id="v7DueBadge">0</b></button></div><div class="v7-overview"><div><span>学習記録</span><strong id="v7Total">0</strong><small>件</small></div><div><span>今週の学習</span><strong id="v7Week">0</strong><small>件</small></div><div><span>完了した4段階</span><strong id="v7Done">0</strong><small>件</small></div></div><div class="v7-recent"><div class="v7-section-head"><h2>最近の学習</h2><button id="v7History" type="button">すべて見る →</button></div><div id="v7RecentList"><p>まだ学習記録がありません。</p></div></div></section><section aria-label="学習プランとスマート復習" id="v8Workspace">
 <div class="v8-heading"><span>YOUR LEARNING SPACE</span><h2>今日の学びを、設計する。</h2><p>目標を決めて、学びを積み重ねよう。</p></div>
 <div class="v8-grid"><article class="v8-card"><div class="v8-card-head"><span>◎ 学習目標</span><span id="v8GoalCount">0件</span></div><div class="v8-list" id="v8Goals"></div><form id="v8GoalForm"><label for="v8GoalInput">新しい目標</label><div class="v8-inline"><input id="v8GoalInput" maxlength="100" placeholder="例：関数を自分で説明する" required="" type="text"/><button type="submit">追加</button></div></form></article>
 <article class="v8-card"><div class="v8-card-head"><span>↻ スマート復習</span><span id="v8DueCount">0件</span></div><p class="v8-help">理解度に合わせて、次に復習する日を提案します。</p><div class="v8-list" id="v8Due"></div><button class="v8-subtle" id="v8ReviewAll" type="button">復習画面を開く ↗</button></article></div>
@@ -728,6 +777,14 @@ body.b13-simple .v11-shortcuts{display:none!important}
 </div>
 <div class="v6-practice" hidden="" id="v6Recall"><h3>思い出す練習</h3><p>保存済みの学習から1件選び、メモを見ずに説明してみましょう。これは自己評価用です。</p><select aria-label="練習する学習記録" id="v6RecallSelect"><option value="">学習記録を選択</option></select><label for="v6RecallAnswer">覚えていること</label><textarea id="v6RecallAnswer" placeholder="何も見ずに、覚えていることを書いてみよう"></textarea><button id="v6Reveal" type="button">元のメモと比較する</button><div hidden="" id="v6RecallOriginal"></div><div class="v6-rating" hidden="" id="v6Rating"><span>自分で理解度を選ぶ</span><button data-v6score="1" type="button">もう一度</button><button data-v6score="2" type="button">少し理解</button><button data-v6score="3" type="button">説明できる</button></div><p id="v6RecallStatus" role="status"></p></div>
 <div class="v6-practice" hidden="" id="v6Plan"><h3>次に学ぶテーマ</h3><label for="v6PlanTopic">学習テーマ</label><input id="v6PlanTopic" maxlength="160" placeholder="例：微分の仕組みを理解する" type="text"/><label for="v6PlanQuestion">確かめたい問い</label><textarea id="v6PlanQuestion" placeholder="何を理解できるようになりたい？"></textarea><button id="v6PlanApply" type="button">学習メモに反映する</button><p id="v6PlanStatus" role="status"></p></div>
+</section><section class="card v13-panel" id="v13Panel" aria-label="学習ダッシュボード">
+<div class="eyebrow">0120' LEARNING OS · VER.15</div>
+<h2>学習ダッシュボード</h2><p>記録と復習を一目で確認できます。学習内容の正誤を自動判定するものではありません。</p>
+<div class="v13-stats"><div><strong id="v13Total">0</strong><small>学習記録</small></div><div><strong id="v13Recent">0</strong><small>直近7日の記録</small></div><div><strong id="v13ReviewCount">0</strong><small>復習の目安</small></div></div>
+<div class="v13-actions"><button type="button" id="v13GuideBtn">はじめての使い方</button><button type="button" id="v13ReviewBtn">復習画面へ</button><button type="button" id="v13RefreshBtn">更新</button></div>
+<div id="v13Guide" hidden><h3>4段階で学ぶ</h3><ol><li><b>0 受容：</b>疑問や分からない点を記録</li><li><b>1 構造：</b>分かっている事実や手順を整理</li><li><b>2 俯瞰：</b>別の解き方や根拠を検討</li><li><b>0' 統合：</b>自分の言葉で説明して保存</li></ol><p>最初はテーマと「0」だけでも構いません。保存後、履歴から続きが書けます。</p></div>
+<div class="v13-reviews"><h3>復習の目安（最近の記録）</h3><div id="v13ReviewList" class="v13-list"></div></div>
+<p class="v13-foot">復習の目安は最終更新日から1日・3日・7日を基準にした簡易表示です。学習履歴の保存形式は変更しません。</p>
 </section><section aria-label="学習ホーム" class="v20-home card" id="v20Home"><div class="eyebrow">LEARNING OS · VER.6.2.0</div><div class="v81-home-mode"><div>学習モードをすぐに選択</div><button data-v81-mode="modeBasic" type="button">01</button><button data-v81-mode="modeSimple" type="button">012</button><button data-v81-mode="modeDetailed" type="button">0120’</button></div><h2>学びを、つなげる。</h2><p>学習を記録し、比較し、振り返る。0 → 1 → 2 → 0′ のワークスペース。</p><button class="os401-workspace" id="os401GoWorkspace" type="button">Learning Workspaceを開く <span aria-hidden="true">→</span></button><div aria-label="0 受容、1 論理化、2 メタ認知、0プライム 統合の4段階" class="os32-flow"><div class="os32-flow-label">COGNITIVE FLOW <span>0 → 1 → 2 → 0′</span></div><div class="os32-orbit"><div class="os32-core"><small>FOUR PHASES</small><strong>0120′</strong><span>学習の循環</span></div><div class="os32-node os32-n0"><b>0</b><small>受容</small></div><div class="os32-node os32-n1"><b>1</b><small>論理化</small></div><div class="os32-node os32-n2"><b>2</b><small>メタ認知</small></div><div class="os32-node os32-n3"><b>0′</b><small>統合</small></div></div><p>疑問から、整理・俯瞰・統合へ。<br/>思考の過程を自分の言葉で記録する。</p></div><div class="v20-stats"><div><strong id="v20Total">0</strong><span>学習記録</span></div><div><strong id="v20Recent">0</strong><span>直近7日の記録</span></div><div><strong id="v20Links">0</strong><span>思考のつながり</span></div></div><div class="v20-focus"><strong id="v20FocusTitle">学習を始めよう</strong><p id="v20FocusDetail">疑問を一つ書くことから始められます。</p></div><div class="v20-actions"><button class="primary" id="v20Continue" type="button">学習を続ける</button><button class="secondary" id="v20Reflect" type="button">思考の変化を見る</button><button class="secondary" id="v20Network" type="button">思考ネットワークを見る</button><button class="secondary" id="v20History" type="button">履歴を見る</button></div><div class="sub" id="v20HomeStatus" role="status">記録は端末内に保存されます。定期的にJSONバックアップを作成してください。</div><div class="beta-entry"><button class="secondary" id="betaShowGuide" type="button">はじめての方へ</button><button class="secondary" id="betaGoFeedback" type="button">ご意見を送る準備</button></div></section>
 <section aria-label="Learning OS ワークスペース" class="thinking40 card" id="thinking40"><div class="thinking40-kicker">LEARNING OS · WORKSPACE</div><h2>学びの現在地を、見渡す。</h2><p class="thinking40-muted">既存の学習記録を読み込み、検索・比較・振り返りができます。元の記録は変更しません。</p><div class="thinking40-metrics"><div><strong id="t40total">0</strong><span>記録</span></div><div><strong id="t40complete">0</strong><span>4段階完了</span></div><div><strong id="t40review">0</strong><span>復習予定</span></div></div><div class="thinking40-toolbar"><label for="t40search">思考を検索</label><input autocomplete="off" id="t40search" placeholder="テーマやメモから探す" type="search"/><button class="secondary" id="t40refresh" type="button">記録を更新</button></div><div aria-label="Learning OSの表示" class="thinking40-tabs" role="group"><button class="active" data-t40tab="explore" type="button">探索</button><button data-t40tab="compare" type="button">比較</button><button data-t40tab="insight" type="button">分析</button></div><div id="t40explore"><div class="thinking40-list" id="t40list"></div></div><div hidden="" id="t40compare"><p class="thinking40-muted">2件の思考記録を並べ、考え方の違いを比較します。</p><div class="thinking40-selects"><label>記録A<select id="t40a"></select></label><label>記録B<select id="t40b"></select></label></div><div class="thinking40-comparison" id="t40comparison"></div></div><div hidden="" id="t40insight"><div id="t40insights"></div></div><div class="thinking40-bottom"><button class="secondary" id="t40export" type="button">学習サマリーをテキスト保存</button><span aria-live="polite" id="t40status" role="status"></span></div></section><section aria-label="Learning OS 5.0 学習スタジオ" class="thinking50 card" id="thinking50">
 <div class="thinking50-eyebrow">LEARNING OS · 5.0 · LEARNING STUDIO</div><h2>学びを、広げる。</h2><p class="thinking50-desc">過去の思考のつながりを見つけ、次の問いを考える。AI接続なしでも使える思考支援ツールです。</p>
@@ -851,7 +908,14 @@ body.b13-simple .v11-shortcuts{display:none!important}
 <div class="actions"><button class="secondary" id="dataCheck" type="button">保存状態を点検</button><button class="secondary" id="verifyFile" type="button">バックアップを検証</button><button class="secondary" id="releaseCheck" type="button">公開前セルフテスト</button></div>
 <div class="sub">公開前には「バックアップを書き出す」でJSONを端末外にも保存し、別の端末・ブラウザでも動作を確認してください。</div><div class="status" id="dataCheckResult" role="status">記録はこの端末のブラウザ内に保存されます。定期的にJSONを書き出してください。</div>
 <div class="sub">検証はJSONファイルを読み取るだけで、現在の学習データを変更しません。</div>
-</section><div class="import-wrap"><label class="fieldlabel" for="importFile">バックアップを復元（JSON）</label><input accept=".json,application/json" id="importFile" type="file"/><div class="actions"><button class="secondary" id="importButton" type="button">選択したバックアップを取り込む</button></div><div class="safety-note">既存の記録は消さず、取り込んだ記録を別の履歴として追加します。同じ内容の記録は重複追加しないよう確認します。取り込み前に現在のバックアップを保存してください。</div></div></section><section class="v7-settings" id="v7Settings"><div class="v7-section-head"><h2>データと設定</h2><span>DATA &amp; SETTINGS</span></div><p>バックアップを作成し、必要に応じて過去のデータを取り込みます。</p><div class="v7-setting-actions"><button id="v7Export" type="button">完全バックアップを書き出す</button><label for="v7Import">完全バックアップを取り込む（JSON）</label><input accept=".json,application/json" id="v7Import" type="file"/></div><p id="v7ImportStatus" role="status">取り込み前に、現在のデータをバックアップしてください。既存の学習記録は消さず、IDが重複する記録は維持します。</p><details><summary>旧バージョンの機能</summary><p>Ver.6.2までの学習マップ・高度な分析・AI分析・従来のバックアップ機能は、画面内の「詳細機能」から利用できます。</p><button id="v7Advanced" type="button">詳細機能を開く</button></details></section></div><div class="app-view" hidden="" id="viewAI"><h2 class="view-heading">AI分析</h2><section aria-label="AI連携準備" class="card" id="aiSection">
+</section><div class="import-wrap"><label class="fieldlabel" for="importFile">バックアップを復元（JSON）</label><input accept=".json,application/json" id="importFile" type="file"/><div class="actions"><button class="secondary" id="importButton" type="button">選択したバックアップを取り込む</button></div><div class="safety-note">既存の記録は消さず、取り込んだ記録を別の履歴として追加します。同じ内容の記録は重複追加しないよう確認します。取り込み前に現在のバックアップを保存してください。</div></div></section><section class="v11-quality" id="v11Quality" aria-label="Ver.11.0 データと品質管理">
+<div class="eyebrow">LEARNING OS · VERSION 12.0</div><h2>安心して、学び続ける。</h2><p>学習記録の状態を確認し、端末内データを保護するためのツールです。既存の記録や復習機能は変更しません。</p>
+<div class="v11-quality-grid"><div class="v11-quality-stat"><span>学習記録</span><strong id="v11Count">—</strong></div><div class="v11-quality-stat"><span>下書き</span><strong id="v11Draft">—</strong></div><div class="v11-quality-stat"><span>保存領域</span><strong id="v11Storage">—</strong></div></div>
+<div class="v11-quality-actions"><button type="button" id="v11Export">安全バックアップ</button><button type="button" id="v11Check">データを診断</button><label for="v11Import">バックアップを検査・復元</label><input type="file" id="v11Import" accept=".json,application/json" hidden></div>
+<p class="v11-quality-warning">復元時は既存データを消去せず、学習記録をIDで照合して新しい記録のみ追加します。その他の保存データは、未登録のキーだけ復元します。</p>
+<details><summary>診断結果と復元内容を確認</summary><pre id="v11Report">「データを診断」を押すと結果が表示されます。</pre></details>
+<p class="v11-quality-status" id="v11Status" role="status" aria-live="polite">更新前にバックアップを保存してください。</p>
+</section><section class="v7-settings" id="v7Settings"><div class="v7-section-head"><h2>データと設定</h2><span>DATA &amp; SETTINGS</span></div><p>バックアップを作成し、必要に応じて過去のデータを取り込みます。</p><div class="v7-setting-actions"><button id="v7Export" type="button">完全バックアップを書き出す</button><label for="v7Import">完全バックアップを取り込む（JSON）</label><input accept=".json,application/json" id="v7Import" type="file"/></div><p id="v7ImportStatus" role="status">取り込み前に、現在のデータをバックアップしてください。既存の学習記録は消さず、IDが重複する記録は維持します。</p><details><summary>旧バージョンの機能</summary><p>Ver.6.2までの学習マップ・高度な分析・AI分析・従来のバックアップ機能は、画面内の「詳細機能」から利用できます。</p><button id="v7Advanced" type="button">詳細機能を開く</button></details></section></div><div class="app-view" hidden="" id="viewAI"><h2 class="view-heading">AI分析</h2><section aria-label="AI連携準備" class="card" id="aiSection">
 <h2>AI分析用テキスト</h2>
 <p>選択した学習モードのメモを、AIに相談するための文章に整えます。送信は自動では行いません。内容を確認してからコピーしてください。</p>
 <div class="hint">個人名・連絡先・学校名など、AIに渡したくない情報はコピー前に削除してください。</div>
@@ -875,7 +939,7 @@ body.b13-simple .v11-shortcuts{display:none!important}
 <p style="margin-top:9px">この説明はアプリ内の記録保存に関するものです。公開先のホスティング事業者によるアクセスログ等の取り扱いまで保証するものではありません。</p>
 <div class="actions"><button class="secondary" id="betaOpenBackup" type="button">バックアップ画面へ</button><button class="secondary" id="betaGuideAgain" type="button">使い方を見る</button></div></section>
 <div class="beta-overlay" hidden="" id="betaOverlay"><div aria-labelledby="betaGuideTitle" aria-modal="true" class="beta-dialog" role="dialog" tabindex="-1">
-<div class="eyebrow">PUBLIC BETA · 6.2.0</div><h2 id="betaGuideTitle">はじめての0120'</h2><p>「分からない」から始めて、自分の考えを少しずつ整理する学習アプリです。</p>
+<div class="eyebrow">Ver.15.0.0</div><h2 id="betaGuideTitle">はじめての0120'</h2><p>「分からない」から始めて、自分の考えを少しずつ整理する学習アプリです。</p>
 <div class="beta-steps"><div class="beta-step"><b>0｜気づく</b> — 気になったことや疑問を書く</div><div class="beta-step"><b>1｜整理する</b> — 分かったことを自分の言葉にする</div><div class="beta-step"><b>2｜見直す</b> — 別の視点から考える</div><div class="beta-step"><b>0'｜つなげる</b> — 学びをまとめ、次の疑問へ進む</div></div>
 <p>最初は0と1だけでも大丈夫です。学習テーマを入力して始めましょう。</p>
 <div class="actions"><button class="primary" id="betaStart" type="button">学習を始める</button><button class="secondary" id="betaClose" type="button">閉じる</button></div>
@@ -883,7 +947,7 @@ body.b13-simple .v11-shortcuts{display:none!important}
 </div></div>
 <nav aria-label="ショートカット" class="v11-shortcuts"><a href="#studySection"><span>✎</span>学習</a><a href="#historySection"><span>▤</span>履歴</a><a href="#networkSection"><span>◎</span>ネットワーク</a><a href="#growthSection"><span>▥</span>成長</a></nav>
 <div class="note">※ 学習記録は現在利用しているブラウザ・アプリ内に保存されます。ブラウザやURLを変更したり、サイトデータを削除すると、記録が表示されなくなる場合があります。定期的にJSONバックアップを保存してください。</div>
-<div class="footer">0120' Learning OS · Ver.13.0.0</div>
+<div class="footer">0120' Learning OS · Ver.15.0.0</div>
 <nav aria-label="画面切り替え" class="v11-bottom"><a aria-current="page" data-view="study" href="#study"><span>✎</span>学習</a><a aria-current="false" data-view="growth" href="#growth"><span>▥</span>復習</a><a aria-current="false" data-view="history" href="#history"><span>▤</span>履歴</a><a aria-current="false" data-view="ai" href="#ai"><span>◇</span>AI分析</a></nav></main>
 <script>
 (function(){
@@ -1721,9 +1785,9 @@ function validate(){if(!$('betaRating').value||!$('betaValue').value){$('betaSta
 function formatted(){return JSON.stringify(payload(),null,2);}
 $('betaExport').addEventListener('click',function(){if(!validate())return;try{var blob=new Blob([formatted()],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='0120_beta_feedback_'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url);},2000);$('betaStatus').textContent='保存操作を開始しました。ファイルに保存されたか確認してください。';}catch(e){$('betaStatus').textContent='保存できませんでした。コピーをお試しください。';}});
 $('betaCopy').addEventListener('click',function(){if(!validate())return;var data=formatted();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(data).then(function(){$('betaStatus').textContent='回答をコピーしました。共有前に内容を確認してください。';}).catch(function(){$('betaStatus').textContent='コピーできませんでした。JSON保存をお試しください。';});}else{$('betaStatus').textContent='この環境ではコピーに対応していません。JSON保存をお試しください。';}});
-/* Ver.13 uses an inline welcome experience instead of the legacy modal. */
+try{if(!localStorage.getItem(seen))setTimeout(guide,350);}catch(e){}
 })();
-</script><!-- Update notification removed intentionally in Ver.12.0.5. -->
+</script><div id="release-check" role="status" style="position:fixed;right:12px;bottom:calc(78px + env(safe-area-inset-bottom));z-index:1000;background:#172235;color:#e7f1ff;border:1px solid #607795;border-radius:14px;padding:9px 12px;font:12px -apple-system,BlinkMacSystemFont,sans-serif;max-width:270px;box-shadow:0 6px 20px #0005;display:none"></div><script id="0120-release-check">(()=>{const current="6.2.0";const el=document.getElementById('release-check');async function check(){try{const response=await fetch('./version.json?t='+Date.now(),{cache:'no-store'});if(!response.ok)return;const v=await response.json();if(v.version&&v.version!==current){el.style.display='block';el.replaceChildren();const msg=document.createElement('span');msg.textContent='新しいバージョン '+v.version+' が公開されています。 ';const btn=document.createElement('button');btn.type='button';btn.textContent='更新';btn.style.cssText='padding:6px 10px;margin-left:6px;border-radius:8px;background:#c4defd;color:#10243b;border:0;cursor:pointer';btn.onclick=async()=>{if('serviceWorker'in navigator){try{const r=await navigator.serviceWorker.getRegistration();if(r)await r.update()}catch(e){}}location.reload()};el.append(msg,btn)}else{el.style.display='none'}}catch(e){}}window.addEventListener('load',check);window.addEventListener('focus',check)})();</script>
 <script id="v300-script">
 (function(){
 'use strict';
@@ -1862,7 +1926,7 @@ var checks=read(CK,{}),due=0;if(checks&&typeof checks==='object')a.forEach(funct
 var list=$('v7RecentList');list.replaceChildren();a.slice().sort(function(x,y){return (date(y.updated||y.created)||0)-(date(x.updated||x.created)||0)}).slice(0,4).forEach(function(x){var b=document.createElement('button');b.type='button';b.className='v7-record';var t=document.createElement('strong'),sm=document.createElement('small');t.textContent=String(x.data.topic||'無題の学習');var d=date(x.updated||x.created);sm.textContent=(d?d.toLocaleDateString('ja-JP'):'日付不明')+' · '+['memo0','memo1','memo2','memo3'].filter(function(k){return String(x.data[k]||'').trim()}).length+'/4 段階';b.append(t,sm);b.addEventListener('click',function(){go('history','historySection');var input=$('historySearch');if(input){input.value=String(x.data.topic||'');input.dispatchEvent(new Event('input',{bubbles:true}))}});list.appendChild(b)});if(!a.length){var p=document.createElement('p');p.textContent='最初の学習記録を作成しましょう。';list.appendChild(p)}}
 $('v7New').addEventListener('click',function(){go('study','studySection')});$('v7Review').addEventListener('click',function(){go('growth','reflection230')});$('v7History').addEventListener('click',function(){go('history','historySection')});$('v7Advanced').addEventListener('click',function(){go('study','v61AdvancedContent');var t=$('v61Toggle');if(t&&$('v61AdvancedContent').hidden)t.click()});
 function download(obj,name){var blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},3000)}
-$('v7Export').addEventListener('click',function(){try{var obj={app:'0120 Learning OS',type:'v12-full-backup',version:'12.0.5',exportedAt:new Date().toISOString(),storage:{}};keys.forEach(function(k){var v=localStorage.getItem(k);if(v!==null)obj.storage[k]=JSON.parse(v)});download(obj,'0120-learning-os-v12-full-backup.json');$('v7ImportStatus').textContent='バックアップを書き出しました。ファイルアプリで保存を確認してください。'}catch(e){$('v7ImportStatus').textContent='書き出しに失敗しました：'+e.message}});
+$('v7Export').addEventListener('click',function(){try{var obj={app:'0120 Learning OS',type:'v8-full-backup',version:'8.0.0',exportedAt:new Date().toISOString(),storage:{}};keys.forEach(function(k){var v=localStorage.getItem(k);if(v!==null)obj.storage[k]=JSON.parse(v)});download(obj,'0120-learning-os-v8-full-backup.json');$('v7ImportStatus').textContent='バックアップを書き出しました。ファイルアプリで保存を確認してください。'}catch(e){$('v7ImportStatus').textContent='書き出しに失敗しました：'+e.message}});
 $('v7Import').addEventListener('change',async function(){var file=this.files&&this.files[0],status=$('v7ImportStatus');if(!file)return;if(file.size>12*1024*1024){status.textContent='12MB以下のJSONを選んでください。';return}try{var obj=JSON.parse(await file.text());if(!obj||obj.app!=='0120 Learning OS')throw Error('Learning OSのバックアップではありません');var incoming={};if(obj.storage&&typeof obj.storage==='object'&&!Array.isArray(obj.storage)){incoming=obj.storage}else if(Array.isArray(obj.records)){incoming[RK]=obj.records;if(obj.draft)incoming['0120_learning_os_v4_draft']=obj.draft}else throw Error('対応していないバックアップ形式です');
 var rs=incoming[RK];if(rs!==undefined&&(!Array.isArray(rs)||rs.length>5000||!rs.every(function(x){return x&&typeof x.id==='string'&&x.id.length<200&&x.data&&typeof x.data==='object'&&!Array.isArray(x.data)})))throw Error('学習記録の形式が不正です');
 var current=rows(),merged=current.slice(),seen=new Set(current.map(function(x){return x.id})),added=0;if(rs)rs.forEach(function(x){if(!seen.has(x.id)){merged.push(x);seen.add(x.id);added++}});
@@ -1924,49 +1988,94 @@ el('v10Record').addEventListener('change',function(){el('v10Answer').value='';di
 el('v10Reveal').addEventListener('click',function(){var r=items.find(function(r){return String(r.id)===el('v10Record').value});if(!r){el('v10Status').textContent='学習記録を選んでください。';return}el('v10Original').textContent='1｜保存されている説明\n'+String(r.data.memo1||'（説明は未記入）');el('v10Original').hidden=false;el('v10Status').textContent='元のメモと比較してみましょう。'});
 el('v10Next').addEventListener('click',function(){if(!items.length){refresh();return}var i=items.findIndex(function(r){return String(r.id)===el('v10Record').value});el('v10Record').value=String(items[(i+1)%items.length].id);el('v10Answer').value='';display()});
 document.addEventListener('click',function(e){if(e.target.closest('#saveButton,#v9Save,#newButton,#historySection'))setTimeout(refresh,250)});window.addEventListener('focus',refresh);document.addEventListener('visibilitychange',function(){if(!document.hidden)refresh()});refresh();
-})();</script><script id="v11-script">(function(){'use strict';
-var KEY='0120_learning_os_v4_records', $=function(id){return document.getElementById(id)}, filter='all', lastSignature='';
-function records(){try{var a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a.filter(function(r){return r&&r.id!=null&&r.data&&typeof r.data==='object'}):[]}catch(e){$('v11LibraryStatus').textContent='保存データを読み込めませんでした。バックアップを確認してください。';return []}}
-function mode(r){var d=r.data||{},m=String(d.mode||r.mode||'').toLowerCase();if(m==='basic'||m==='01')return '01';if(m==='simple'||m==='012')return '012';if(m==='detailed'||m==='0120')return '0120';if(String(d.memo3||'').trim())return '0120';if(String(d.memo2||'').trim())return '012';return '01'}
-function refresh(){var rows=records(),q=$('v11Search').value.trim().toLocaleLowerCase('ja-JP');$('v11Total').textContent=rows.length;$('v11ReviewTotal').textContent=rows.filter(function(r){return String(r.data.memo0||r.data.memo1||'').trim()}).length;var filtered=rows.filter(function(r){if(filter!=='all'&&mode(r)!==filter)return false;return !q||['topic','memo0','memo1','memo2','memo3'].some(function(k){return String(r.data[k]||'').toLocaleLowerCase('ja-JP').includes(q)})}).sort(function(a,b){return Date.parse(b.updated||b.created||0)-Date.parse(a.updated||a.created||0)});$('v11LibraryCount').textContent=filtered.length+' 件';var list=$('v11LibraryList');list.replaceChildren();if(!filtered.length){var p=document.createElement('p');p.className='v11-empty';p.textContent=rows.length?'条件に合う記録はありません。':'学習を保存すると、ここに表示されます。';list.appendChild(p);return}filtered.slice(0,50).forEach(function(r){var box=document.createElement('article');box.className='v11-record';var title=document.createElement('strong');title.textContent=String(r.data.topic||'無題の学習').slice(0,180);var sub=document.createElement('small');var date=new Date(r.updated||r.created||0);sub.textContent=mode(r)+' · '+(isFinite(date.getTime())?date.toLocaleDateString('ja-JP'):'日付不明');var btn=document.createElement('button');btn.type='button';btn.textContent='履歴で開く';btn.addEventListener('click',function(){var tab=document.querySelector('[data-view="history"]');if(tab)tab.click();var search=$('historySearch');if(search){search.value=String(r.data.topic||'');search.dispatchEvent(new Event('input',{bubbles:true}))}var target=$('historySection');if(target)setTimeout(function(){target.scrollIntoView({behavior:'smooth',block:'start'})},70);$('v11LibraryStatus').textContent='履歴画面に移動しました。該当する記録を選択してください。'});box.append(title,sub,btn);list.appendChild(box)});if(filtered.length>50){var p=document.createElement('p');p.className='v11-empty';p.textContent='最初の50件を表示中です。検索して絞り込んでください。';list.appendChild(p)}}
-$('v11Search').addEventListener('input',refresh);document.querySelectorAll('[data-v11filter]').forEach(function(b){b.addEventListener('click',function(){filter=b.dataset.v11filter;document.querySelectorAll('[data-v11filter]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});refresh()})});
-document.querySelectorAll('[data-v11go]').forEach(function(b){b.addEventListener('click',function(){var t=$(b.dataset.v11go);if(!t)return;var study=document.querySelector('[data-view="study"]');if(study)study.click();if(b.dataset.v11go==='v9Editor'&&$('modeBasic'))$('modeBasic').click();if(b.dataset.v11go==='v7Settings'){var details=t.closest('details');if(details)details.open=true}setTimeout(function(){t.scrollIntoView({behavior:'smooth',block:'start'})},80)})});
-function syncDeep(){var simple=$('modeSimple')&&$('modeSimple').getAttribute('aria-pressed')==='true';$('v11Deepen').hidden=!simple}['modeBasic','modeSimple','modeDetailed'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',function(){setTimeout(syncDeep,0)})});$('v11Deepen').addEventListener('click',function(){if(!confirm('0120’モードへ切り替えますか？ 入力内容は引き継がれます。'))return;$('modeDetailed').click();setTimeout(function(){$('studySection').scrollIntoView({behavior:'smooth',block:'start'})},90)});
-document.addEventListener('click',function(e){if(e.target.closest('#saveButton,#v9Save,#newButton,#historySection,#v7Import'))setTimeout(refresh,350)});window.addEventListener('focus',refresh);document.addEventListener('visibilitychange',function(){if(!document.hidden)refresh()});window.addEventListener('storage',refresh);syncDeep();refresh();
-})();</script>
-<script id="v12-script">(function(){'use strict';
-var RK='0120_learning_os_v4_records',SK='0120_learning_os_v12_review_schedule', $=function(id){return document.getElementById(id)}, items=[];
-function safe(key,fallback){try{var x=JSON.parse(localStorage.getItem(key)||'null');return x===null?fallback:x}catch(e){return fallback}}
-function records(){var r=safe(RK,[]);return Array.isArray(r)?r.filter(function(x){return x&&x.id!=null&&x.data&&typeof x.data==='object'}):[]}
-function schedule(){var x=safe(SK,{});return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}
-function stamp(x){var n=Date.parse(x.updated||x.created||0);return Number.isFinite(n)?n:0}
-function text(v){return String(v==null?'':v).trim()}
-function record(sel){return items.find(function(x){return String(x.id)===$(sel).value})}
-function fmt(date){return new Date(date).toLocaleDateString('ja-JP')}
-function mode(r){var d=r.data,m=text(d.mode||r.mode).toLowerCase();if(m==='basic'||m==='01')return '01';if(m==='simple'||m==='012')return '012';if(m==='detailed'||m==='0120'||m==='0120\'')return "0120'";return text(d.memo3)?"0120'":text(d.memo2)?'012':'01'}
-function fillSelect(id){var s=$(id),old=s.value;s.replaceChildren();var o=document.createElement('option');o.value='';o.textContent='学習記録を選択';s.append(o);items.forEach(function(r){var op=document.createElement('option');op.value=String(r.id);op.textContent=text(r.data.topic||'無題の学習').slice(0,65);s.append(op)});if(items.some(function(r){return String(r.id)===old}))s.value=old}
-function refresh(){items=records().sort(function(a,b){return stamp(b)-stamp(a)});fillSelect('v12AiRecord');fillSelect('v12ReviewRecord');$('v12All').textContent=items.length;var s=schedule(),now=Date.now(),due=0,reviewed=0;items.forEach(function(r){var e=s[String(r.id)];if(e&&e.next){reviewed++;if(Date.parse(e.next)<=now)due++}else if(text(r.data.memo0||r.data.memo1))due++});$('v12Due').textContent=due;$('v12Reviewed').textContent=reviewed;var counts={'01':0,'012':0,"0120'":0},topics={};items.forEach(function(r){counts[mode(r)]++;var t=text(r.data.topic);if(t)topics[t]=(topics[t]||0)+1});$('v12ModeSummary').textContent='学習段階：01 '+counts['01']+'件 / 012 '+counts['012']+'件 / 0120’ '+counts["0120'"]+'件';var top=Object.keys(topics).sort(function(a,b){return topics[b]-topics[a]}).slice(0,3);$('v12ThemeSummary').textContent=top.length?'よく学んだテーマ：'+top.join('、'):'記録を保存すると学習テーマが表示されます。';showQuestion()}
-function showQuestion(){var r=record('v12ReviewRecord');$('v12ReviewQuestion').textContent=r?'学習テーマ：'+text(r.data.topic||'無題')+'\n疑問：'+text(r.data.memo0||'（未記入）'):'記録を選択してください。';$('v12ReviewAnswer').hidden=true;$('v12ReviewAnswer').textContent='';$('v12ReviewStatus').textContent=''}
-$('v12ReviewRecord').addEventListener('change',function(){$('v12RecallText').value='';showQuestion()});
-$('v12ShowAnswer').addEventListener('click',function(){var r=record('v12ReviewRecord');if(!r){$('v12ReviewStatus').textContent='記録を選んでください。';return}$('v12ReviewAnswer').textContent='保存した説明：\n'+text(r.data.memo1||'（説明は未記入）')+'\n\n俯瞰：'+text(r.data.memo2||'（未記入）')+'\n統合：'+text(r.data.memo3||'（未記入）');$('v12ReviewAnswer').hidden=false});
-document.querySelectorAll('[data-v12grade]').forEach(function(b){b.addEventListener('click',function(){var r=record('v12ReviewRecord');if(!r){$('v12ReviewStatus').textContent='記録を選んでください。';return}var grade=b.dataset.v12grade,days={again:1,okay:3,good:7}[grade],s=schedule(),now=new Date(),next=new Date(now.getTime()+days*86400000);s[String(r.id)]={grade:grade,last:now.toISOString(),next:next.toISOString()};try{localStorage.setItem(SK,JSON.stringify(s));$('v12ReviewStatus').textContent='復習結果を保存しました。次の復習目安：'+fmt(next);refresh();$('v12ReviewStatus').textContent='復習結果を保存しました。次の復習目安：'+fmt(next)}catch(e){$('v12ReviewStatus').textContent='保存できませんでした。ストレージの空き容量を確認してください。'}})});
-$('v12MakePrompt').addEventListener('click',function(){var r=record('v12AiRecord');if(!r){$('v12AiStatus').textContent='学習記録を選んでください。';return}var d=r.data,style=$('v12AiStyle').value,req={explain:'中学生・高校生にも分かるように、具体例を交えて説明し、最後に理解確認の質問を1つ出してください。',quiz:'答えを最初に示さず、理解を確認する問題を3つ出してください。回答後にフィードバックできるようにしてください。',deepen:"01（基本理解）→012（構造化・俯瞰）→0120'（統合）の順に、理解を深める問いと具体例を提案してください。"}[style];$('v12Prompt').textContent='以下は私の学習記録です。\n\nテーマ：'+text(d.topic||'未設定')+'\n0 分からないこと：'+text(d.memo0||'未記入')+'\n1 分かったこと：'+text(d.memo1||'未記入')+'\n2 俯瞰・整理：'+text(d.memo2||'未記入')+"\n0' 統合："+text(d.memo3||'未記入')+'\n\n依頼：'+req;$('v12Prompt').hidden=false;$('v12AiStatus').textContent='質問文を生成しました。内容を確認してからコピーしてください。'});
-$('v12CopyPrompt').addEventListener('click',function(){var t=$('v12Prompt').textContent;if($('v12Prompt').hidden||!t){$('v12AiStatus').textContent='先に質問文を生成してください。';return}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){$('v12AiStatus').textContent='コピーしました。'},function(){$('v12AiStatus').textContent='コピーできませんでした。文章を選択してコピーしてください。'})}else{$('v12AiStatus').textContent='文章を選択してコピーしてください。'}});
-$('v12Export').addEventListener('click',function(){try{var payload={app:'0120 Learning OS',version:'12.0.5',type:'v12-learning-assistance',exportedAt:new Date().toISOString(),reviewSchedule:schedule()};var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='0120-learning-os-v12-assistance.json';document.body.append(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},1000);$('v12ExportStatus').textContent='学習支援データを書き出しました。ファイルの保存を確認してください。'}catch(e){$('v12ExportStatus').textContent='書き出しに失敗しました。'}});
-$('v12Refresh').addEventListener('click',refresh);window.addEventListener('focus',refresh);document.addEventListener('visibilitychange',function(){if(!document.hidden)refresh()});document.addEventListener('click',function(e){if(e.target.closest('#saveButton,#v9Save,#newButton,#v7Import'))setTimeout(refresh,400)});refresh();
-})();</script><script id="beginner-v13-script">(function(){'use strict';
-var $=function(id){return document.getElementById(id)},KEY='0120_learning_os_v13_simple_view';
-function stored(){try{return localStorage.getItem(KEY)}catch(e){return null}}
-function save(v){try{localStorage.setItem(KEY,v)}catch(e){}}
-function simple(v){document.body.classList.toggle('b13-simple',v);$('b13ToggleAdvanced').textContent=v?'すべての機能を見る':'初心者向け表示に戻す';$('b13ToggleAdvanced').setAttribute('aria-pressed',String(!v));save(v?'on':'off');}
-function nav(name){var a=document.querySelector('.v11-bottom [data-view="'+name+'"]');if(a)a.click()}
-function jump(el){if(!el)return;el.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});el.classList.add('b13-highlight');setTimeout(function(){el.classList.remove('b13-highlight')},1800)}
-function start(){nav('study');if($('modeBasic'))$('modeBasic').click();if(!document.body.classList.contains('b13-simple'))simple(true);jump($('v9Editor'));setTimeout(function(){$('v9Topic').focus({preventScroll:true})},260)}
-$('b13Start').addEventListener('click',start);$('b13GuideStart').addEventListener('click',start);
-$('b13GuideToggle').addEventListener('click',function(){var open=$('b13Guide').hidden;$('b13Guide').hidden=!open;this.setAttribute('aria-expanded',String(open));this.textContent=open?'使い方を閉じる':'3分で使い方を見る';if(open)jump($('b13Guide'))});
-$('b13ToggleAdvanced').addEventListener('click',function(){simple(!document.body.classList.contains('b13-simple'));if(!document.body.classList.contains('b13-simple'))jump($('v81ModeSection'))});
-$('b13OpenHistory').addEventListener('click',function(){nav('history')});$('b13OpenReview').addEventListener('click',function(){nav('growth')});
-// Default to the approachable view for new users, retain an existing preference.
-simple(stored()!=='off');
-})();</script></body>
+})();</script><script id="v11-quality-script">
+(function(){'use strict';
+var PREFIX='0120_',RECORDS='0120_learning_os_v4_records',DRAFT='0120_learning_os_v4_draft';
+var $=function(id){return document.getElementById(id)};
+function getRecords(){var raw=localStorage.getItem(RECORDS)||'[]';var a=JSON.parse(raw);if(!Array.isArray(a))throw Error('学習記録が配列ではありません');return a;}
+function relevantKeys(){var keys=[];for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&k.indexOf(PREFIX)===0)keys.push(k);}return keys.sort();}
+function status(msg){$('v11Status').textContent=msg;}
+function report(msg){$('v11Report').textContent=msg;$('v11Report').parentElement.open=true;}
+function refresh(){try{var rs=getRecords();$('v11Count').textContent=rs.length;var draft=localStorage.getItem(DRAFT);$('v11Draft').textContent=draft?'あり':'なし';$('v11Storage').textContent=relevantKeys().length+'項目';}catch(e){$('v11Count').textContent='要確認';status('記録の読み込みに問題があります。データ診断を実行してください。');}}
+function diagnostic(){var lines=[],problems=[];try{var rs=getRecords(),ids=new Set();rs.forEach(function(r,i){if(!r||typeof r!=='object'||typeof r.id!=='string'||!r.data||typeof r.data!=='object'){problems.push('記録'+(i+1)+'：形式を確認');return;}if(ids.has(r.id))problems.push('重複ID：'+r.id);ids.add(r.id);});lines.push('学習記録：'+rs.length+'件');}catch(e){problems.push('学習記録：'+e.message)}
+try{var d=localStorage.getItem(DRAFT);if(d)JSON.parse(d);lines.push('下書き：'+(d?'読み取り可能':'未作成'));}catch(e){problems.push('下書き：JSONの形式を確認')}
+try{var key='0120_v11_storage_probe';localStorage.setItem(key,'ok');if(localStorage.getItem(key)!=='ok')throw Error('読み戻しに失敗');localStorage.removeItem(key);lines.push('保存領域：読み書き可能');}catch(e){problems.push('保存領域：'+e.message)}
+lines.push('0120関連の保存キー：'+relevantKeys().length+'項目');lines.push(problems.length?'注意：\n'+problems.join('\n'):'診断で問題は検出されませんでした。');report(lines.join('\n'));status(problems.length?'診断が完了しました。注意事項を確認してください。':'診断が完了しました。');refresh();}
+function download(name,contents){var blob=new Blob([contents],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},5000)}
+$('v11Export').addEventListener('click',function(){try{var data={};relevantKeys().forEach(function(k){data[k]=localStorage.getItem(k)});var obj={format:'0120-learning-os-v11-safety',version:1,created:new Date().toISOString(),storage:data};download('0120-learning-os-v11-backup-'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify(obj,null,2));status('バックアップファイルを作成しました。iPhoneでは「ファイル」に保存されたか確認してください。');refresh();}catch(e){status('バックアップを作成できませんでした：'+e.message)}});
+$('v11Check').addEventListener('click',diagnostic);
+$('v11Import').addEventListener('change',async function(){var f=this.files&&this.files[0];this.value='';if(!f)return;if(f.size>15*1024*1024){status('15MBを超えるファイルは安全のため取り込めません。');return;}try{var obj=JSON.parse(await f.text());if(!obj||obj.format!=='0120-learning-os-v11-safety'||obj.version!==1||!obj.storage||typeof obj.storage!=='object'||Array.isArray(obj.storage))throw Error('Ver.11.0の安全バックアップ形式ではありません');var incoming=obj.storage,keys=Object.keys(incoming);if(keys.length>200||keys.some(function(k){return !k.startsWith(PREFIX)||typeof incoming[k]!=='string'}))throw Error('保存キーの形式が正しくありません');var old=getRecords(),added=[],seen=new Set(old.filter(function(r){return r&&typeof r.id==='string'}).map(function(r){return r.id}));if(Object.prototype.hasOwnProperty.call(incoming,RECORDS)){var rs=JSON.parse(incoming[RECORDS]);if(!Array.isArray(rs)||rs.length>20000)throw Error('記録の形式または件数を確認してください');rs.forEach(function(r){if(!r||typeof r.id!=='string'||!r.data||typeof r.data!=='object')throw Error('学習記録の構造が不正です');if(!seen.has(r.id)){seen.add(r.id);added.push(r)}})}
+var newKeys=keys.filter(function(k){return k!==RECORDS&&localStorage.getItem(k)===null});var preview='追加予定の学習記録：'+added.length+'件\n追加予定の設定・補助データ：'+newKeys.length+'項目\n既存の記録・設定は上書きしません。';report(preview);if(!confirm(preview+'\n\n復元しますか？ 復元前に現在のバックアップを保存することを推奨します。')){status('復元をキャンセルしました。');return;}
+// Prepare all JSON before writing; preserve existing records and other app keys.
+var merged=JSON.stringify(old.concat(added));if(added.length)localStorage.setItem(RECORDS,merged);var done=0;newKeys.forEach(function(k){try{localStorage.setItem(k,incoming[k]);done++}catch(e){status('一部のデータを書き込めませんでした。保存容量を確認してください。');}});status('復元処理が完了しました：記録'+added.length+'件、補助データ'+done+'項目。画面を再読み込みして確認してください。');refresh();}catch(e){status('取り込みを中止しました：'+e.message)}});
+window.addEventListener('storage',refresh);window.addEventListener('0120-record-saved',refresh);document.addEventListener('visibilitychange',function(){if(!document.hidden)refresh()});refresh();
+})();
+</script><script id="v13-dashboard-script">
+(function(){
+'use strict';
+var KEY='0120_learning_os_v4_records';
+function el(id){return document.getElementById(id);}
+function getRecords(){try{var r=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(r)?r.filter(function(x){return x&&typeof x==='object'&&x.data&&typeof x.data==='object';}):[];}catch(e){return [];}}
+function updated(r){var t=Date.parse(r.updated||r.created||'');return Number.isFinite(t)?t:0;}
+function refresh(){
+var rs=getRecords(),now=Date.now(),day=86400000;
+el('v13Total').textContent=String(rs.length);
+el('v13Recent').textContent=String(rs.filter(function(r){var t=updated(r);return t&&now-t>=0&&now-t<=7*day;}).length);
+var due=rs.filter(function(r){var t=updated(r);return t&&now-t>=day;}).sort(function(a,b){return updated(b)-updated(a);});
+el('v13ReviewCount').textContent=String(due.length);
+var list=el('v13ReviewList');list.replaceChildren();
+if(!due.length){var p=document.createElement('p');p.textContent='現在、復習の目安に該当する記録はありません。';list.append(p);return;}
+due.slice(0,5).forEach(function(r){
+var div=document.createElement('div'),title=document.createElement('strong'),sub=document.createElement('small'),days=Math.floor((now-updated(r))/day);
+title.textContent=String(r.data.topic||'無題の学習').slice(0,100);
+sub.textContent='最終更新から'+days+'日 · '+(days>=7?'7日目の復習目安':days>=3?'3日目の復習目安':'1日目の復習目安');
+div.append(title,sub);list.append(div);
+});
+}
+el('v13GuideBtn').addEventListener('click',function(){var x=el('v13Guide');x.hidden=!x.hidden;});
+el('v13ReviewBtn').addEventListener('click',function(){var a=document.querySelector('[data-view="growth"]');if(a)a.click();});
+el('v13RefreshBtn').addEventListener('click',refresh);
+window.addEventListener('storage',refresh);
+window.addEventListener('0120-record-saved',refresh);
+document.addEventListener('visibilitychange',function(){if(!document.hidden)refresh();});
+refresh();
+})();
+</script><nav class="v14-bottom" aria-label="メインメニュー"><button type="button" data-v14-nav="study" aria-current="page"><span>✎</span>学ぶ</button><button type="button" data-v14-nav="history"><span>▤</span>履歴</button><button type="button" data-v14-nav="manage"><span>⚙</span>管理</button></nav><script id="v15-release-navigation">
+(function(){
+'use strict';
+var body=document.body,manage=document.getElementById('v14Manage'),expand=document.getElementById('v14Expand');
+body.classList.add('v14-compact');
+function go(view){
+  if(typeof window.__learningOSShowView==='function'){window.__learningOSShowView(view);return;}
+  var a=document.querySelector('.v11-bottom [data-view="'+view+'"]');if(a)a.click();
+}
+function active(tab){
+ document.querySelectorAll('[data-v14-nav]').forEach(function(b){
+  if(b.dataset.v14Nav===tab)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');
+ });
+}
+function setExpanded(expanded){
+ body.classList.toggle('v14-expanded',expanded);body.classList.toggle('v14-compact',!expanded);
+ expand.textContent=expanded?'簡単表示に戻す':'すべての機能';
+ expand.setAttribute('aria-pressed',String(expanded));
+}
+document.querySelectorAll('[data-v14-nav]').forEach(function(b){
+ b.addEventListener('click',function(){
+  var tab=b.dataset.v14Nav;active(tab);
+  if(tab==='manage'){go('study');manage.hidden=false;manage.scrollIntoView({block:'start',behavior:'auto'});}
+  else{manage.hidden=true;go(tab);}
+ });
+});
+document.querySelectorAll('[data-v15-target]').forEach(function(b){
+ b.addEventListener('click',function(){
+  var t=b.dataset.v15Target;manage.hidden=true;
+  if(t==='growth'||t==='ai'){go(t);return;}
+  setExpanded(true);
+  if(t==='dashboard'){go('study');var d=document.getElementById('v13Panel');if(d)d.scrollIntoView({block:'start'});}
+  if(t==='backup'){go('history');var d=document.getElementById('historySection');if(d)d.scrollIntoView({block:'start'});}
+ });
+});
+expand.addEventListener('click',function(){setExpanded(!body.classList.contains('v14-expanded'));});
+})();
+</script></body>
 </html>
